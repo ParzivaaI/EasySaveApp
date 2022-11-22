@@ -41,7 +41,7 @@ namespace EasySaveAppV0
                     Console.ReadKey(); //awaiting input to leave
                     break;
                 case "2": //Daily log to print
-                    SearchFile.Read();
+                    //SearchFile.Read();
                     break;
                 case "3": // Daily save state to print
                     break;

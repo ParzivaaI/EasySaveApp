@@ -9,6 +9,7 @@ namespace EasySaveAppV0.SearchFile
     {
         public SearchFile()
         {
+            
         }
         public void Read()
         {
