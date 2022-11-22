@@ -1,18 +1,22 @@
 ﻿using System;
 using System.IO;
-using EasySaveAppV0.SearchFile;
+
+using EasySaveAppV0.Search;
 
 namespace EasySaveAppV0
-{    
+{
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("EasySave.v1 - Make your choice");
+            Console.WriteLine("EasySave.v1 - Make your language choice");
+            //LanguagechoiceFunction
             Choice();
         }
         public static void Choice()
-        { 
+        {
+            FileEditing ObjfileEditing = new FileEditing();
+            Console.WriteLine("Easysave - make your choice");
             Console.WriteLine("1.  Create a save");
             Console.WriteLine("2.  Read the daily log");
             Console.WriteLine("3.  Read daily saves states");
@@ -20,34 +24,28 @@ namespace EasySaveAppV0
             switch (menuChoice)
             {
                 case "1": //Creating a backup
+                    Console.WriteLine("Path that you want to copy (drop the file/folder)");
+                    string copypath = Console.ReadLine();
+                    Console.WriteLine("Path where to paste the copy (drop the file/folder)");
+                    string pathpaste = Console.ReadLine();
                     Console.WriteLine("Choose the type of backup you wanna do:");
                     Console.WriteLine("1. Differential");
                     Console.WriteLine("2. Complete");
-                    Console.WriteLine("en vrai met le path ici j'ai pas codé");
-                    string path = Console.ReadLine();
-                    Console.WriteLine("chemin où faire la copie");  
-                    string pathpaste = Console.ReadLine();
-                    DirSearch(path,pathpaste);
-                    static void DirSearch(string sDir,string sDirPaste)
+                    string savechoice = Console.ReadLine();
+                    if (savechoice=="1")
                     {
-                        try
-                        {
-                            foreach (string d in Directory.GetDirectories(sDir))
-                            {
-                                foreach (string f in Directory.GetFiles(d))
-                                {
-                                    //
-                                    Console.WriteLine(f);
-                                }
-                            }
-                        }
-                        catch (System.Exception excpt)
-                        {
-                            Console.WriteLine(excpt.Message);
-                        }
+                        ObjfileEditing.DirSearch(copypath, pathpaste);
+                        Console.WriteLine("Save complete.");
                     }
-
-
+                    else if(savechoice=="2")
+                    {
+                        ObjfileEditing.DirSearch(copypath, pathpaste);
+                        Console.WriteLine("Save complete.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error. Please enter a valid choice.");
+                    }
                     Console.ReadKey(); //awaiting input to leave
                     break;
                 case "2": //Daily log to print

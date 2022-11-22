@@ -12,3 +12,17 @@ C:\Users\valen\source\repos\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\
 C:\Users\valen\source\repos\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.dll
 C:\Users\valen\source\repos\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.pdb
 C:\Users\valen\source\repos\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.genruntimeconfig.cache
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.exe
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.deps.json
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.runtimeconfig.json
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.runtimeconfig.dev.json
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.dll
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.pdb
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.csproj.AssemblyReference.cache
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.AssemblyInfoInputs.cache
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.AssemblyInfo.cs
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.dll
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.pdb
+C:\xampp\htdocs\A\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.genruntimeconfig.cache

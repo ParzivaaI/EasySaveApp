@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valen\\source\\repos\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\A\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
       "projectName": "EasySaveAppV0",
-      "projectPath": "C:\\Users\\valen\\source\\repos\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\A\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
       "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valen\\source\\repos\\EasySaveAppV0\\EasySaveAppV0\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\A\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
