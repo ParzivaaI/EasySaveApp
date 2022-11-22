@@ -7,9 +7,9 @@ namespace EasySaveAppV0.SearchFile
 {
     class SearchFile
     {
-        public SearchFile()
-        {
-        }
+        private static SearchFile instance;
+        public SearchFile() => instance = new SearchFile();
+
         public void Read()
         {
             // You can also use System.Environment.GetLogicalDrives to

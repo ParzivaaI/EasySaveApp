@@ -23,25 +23,35 @@ namespace EasySaveAppV0
                     Console.WriteLine("Choose the type of backup you wanna do:");
                     Console.WriteLine("1. Differential");
                     Console.WriteLine("2. Complete");
+                    Console.WriteLine("en vrai met le path ici j'ai pas codé");
                     string path = Console.ReadLine();
-                    DirectoryInfo mydir = new DirectoryInfo(@path);
-
-                    // getting the files in the directory, their names and size
-                    FileInfo[] f = mydir.GetFiles();
-                    //Directory after that
-                    DirectoryInfo[] diArr = mydir.GetDirectories();
-
-                    foreach (FileInfo file in f)
+                    Console.WriteLine("chemin où faire la copie");  
+                    string pathpaste = Console.ReadLine();
+                    DirSearch(path,pathpaste);
+                    static void DirSearch(string sDir,string sDirPaste)
                     {
-                        Console.WriteLine("File Name: {0} Size: {1}", file.Name, file.Length);
+                        try
+                        {
+                            foreach (string d in Directory.GetDirectories(sDir))
+                            {
+                                foreach (string f in Directory.GetFiles(d))
+                                {
+                                    //
+                                    Console.WriteLine(f);
+                                }
+                            }
+                        }
+                        catch (System.Exception excpt)
+                        {
+                            Console.WriteLine(excpt.Message);
+                        }
                     }
-                    // Display the names of the directories.
-                    foreach (DirectoryInfo dri in diArr)
-                        Console.WriteLine(dri.Name);
+
+
                     Console.ReadKey(); //awaiting input to leave
                     break;
                 case "2": //Daily log to print
-                    SearchFile.Read();
+                    //SearchFile.Read();
                     break;
                 case "3": // Daily save state to print
                     break;
