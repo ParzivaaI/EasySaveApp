@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i1kgdcKjdxuLoYJ0a/uNwr95h+FyZue1dZmBoLOtCQMIwnx2duTsmDdM0cw4qHitsCVm9u6suYxvcfjHzsQP0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\valen\\source\\repos\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valen\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
