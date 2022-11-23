@@ -18,11 +18,7 @@ namespace EasySaveAppV0
             Console.WriteLine("en : English");
             Console.WriteLine("fr :Français");
             string langChoice = Console.ReadLine();
-            switch (langChoice)
-            {
-                case "en":
-            }
-
+           
         }
         public static void Choice()
         {

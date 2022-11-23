@@ -6,6 +6,8 @@ namespace EasySaveAppV0
 {
     class Language
     {
+        public Language() { }
+        public void LanguageFR(string lang) { }
 
     }
 }
