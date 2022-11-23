@@ -16,24 +16,34 @@ namespace EasySaveAppV0
         }
         public static void ChoiceLang()
         {
+            int valLang;
+            
             Language ObjLanguage = new Language();
             Console.WriteLine("en : English");
             Console.WriteLine("fr :Français");
             string langChoice = Console.ReadLine();
-            switch (langChoice) {
+            switch (langChoice) 
+            { 
                 case "en":
                     ObjLanguage.LanguageEN();
+                    valLang = 0;
                     break;
                 case "fr":
-                    ObjLanguage.LanguageFR(); 
-                    break;          
-            
-            }
+                    ObjLanguage.LanguageFR();
+                    valLang = 1;
+                    break;
+                default:
+                    Console.WriteLine("Please enter a valid choice");
+                    ChoiceLang();   
+                    break;
+                    
+            }           
             
            
         }
         public static void Choice()
         {
+            Language UseLanguage= new Language();
             FileEditing ObjfileEditing = new FileEditing();
             Console.WriteLine("Easysave - make your choice");
             Console.WriteLine("1.  Create a save");

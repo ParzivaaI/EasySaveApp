@@ -7,8 +7,12 @@ namespace EasySaveAppV0.Languages
     class Language
     {
         public Language() { }
-        public void LanguageFR() { }
-        public void LanguageEN() { }
+        public void LanguageFR() {
+        }
+        public void LanguageEN() {
+            
+        }
+        
 
     }
 }
