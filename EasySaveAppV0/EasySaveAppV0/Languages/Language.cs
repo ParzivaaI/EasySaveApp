@@ -13,12 +13,15 @@ namespace EasySaveAppV0.Languages
 
         public void ChoiceLanguage()
         {
-           // int numLanguage;
+            Console.WriteLine("en : English");
+            Console.WriteLine("fr : Français");
+            // int numLanguage;
             string langChoice = Console.ReadLine();
             switch (langChoice)
             {
                 case "en":
                     LanguageEN();
+                    
                    // numLanguage = 0;
                     break;
                 case "fr":
@@ -27,25 +30,28 @@ namespace EasySaveAppV0.Languages
                     break;
                 default:
                     Console.WriteLine("Please enter a valid choice");
-                    Console.WriteLine("en : English");
-                    Console.WriteLine("fr : Français");
                     ChoiceLanguage();
+                    
+                    
                     break;
 
             
             
             }
-            /*if(numLanguage== 0) {
-                LanguageFR();
-            }*/
+            
         }     
-        public void LanguageFR() {
+        public void LanguageFR() 
+        {
+            string optinchoice = "Easysave - Faites votre choix";
 
 
-            
+
+
         }
-        public void LanguageEN() {
-            
+        public void LanguageEN() 
+        {
+            string optinchoice = "Easysave - make your choice";
+
         }
        
     }

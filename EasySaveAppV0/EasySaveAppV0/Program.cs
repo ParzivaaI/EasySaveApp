@@ -3,6 +3,7 @@ using System.IO;
 
 using EasySaveAppV0.Search;
 using EasySaveAppV0.Languages;
+using System.ComponentModel;
 
 namespace EasySaveAppV0
 {
@@ -20,10 +21,8 @@ namespace EasySaveAppV0
 
         protected static void ChoiceLang()
         {           
-            int numLanguage;
             Language ObjLanguage = new Language(); //appel des différentes fonction utile?
-            Console.WriteLine("en : English");
-            Console.WriteLine("fr : Français");
+            
             ObjLanguage.ChoiceLanguage();
             
         }
@@ -31,7 +30,7 @@ namespace EasySaveAppV0
         {
             Language UseLanguage= new Language();
             FileEditing ObjfileEditing = new FileEditing();
-            Console.WriteLine("Easysave - make your choice");
+            Console.WriteLine();//Easysave - make your choice
             Console.WriteLine("1.  Create a save");
             Console.WriteLine("2.  Read the daily log");
             Console.WriteLine("3.  Read daily saves states");
