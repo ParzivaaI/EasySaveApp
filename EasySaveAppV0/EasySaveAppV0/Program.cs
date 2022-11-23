@@ -17,32 +17,14 @@ namespace EasySaveAppV0
             Choice();
         }
 
-       
-        protected static void ChoiceLang()  
-                   
-        {            
-           // Language ObjLanguage = new Language();
-            int nbLanguage;
+
+        protected static void ChoiceLang()
+        {           
+            int numLanguage;
+            Language ObjLanguage = new Language(); //appel des différentes fonction utile?
             Console.WriteLine("en : English");
             Console.WriteLine("fr : Français");
-            string langChoice = Console.ReadLine();
-            switch (langChoice) 
-            { 
-                case "en":
-                    //  nbLanguage = 0;
-                    //choiceLanguages = 1;
-                    //choiceLanguages = nbLanguage;
-                    break;
-                case "fr":
-                   nbLanguage = 1;
-                  // choiceLanguages = nbLanguage;
-                    break;
-                default:
-                    Console.WriteLine("Please enter a valid choice");
-                    ChoiceLang();   
-                    break;
-                    
-            }
+            ObjLanguage.ChoiceLanguage();
             
         }
         public static void Choice()
