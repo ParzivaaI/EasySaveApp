@@ -34,13 +34,13 @@ namespace EasySaveAppV0
                     string savechoice = Console.ReadLine();
                     if (savechoice=="1")
                     {
-                        ObjfileEditing.DirSearch(copypath, pathpaste);
-                        Console.WriteLine("Save complete.");
+                        ObjfileEditing.DiffSave(copypath, pathpaste);
+                        Console.WriteLine("Differential save completed.");
                     }
                     else if(savechoice=="2")
                     {
-                        ObjfileEditing.DirSearch(copypath, pathpaste);
-                        Console.WriteLine("Save complete.");
+                        ObjfileEditing.CompleteSave(copypath, pathpaste);
+                        Console.WriteLine("Complete Save completed.");
                     }
                     else
                     {
