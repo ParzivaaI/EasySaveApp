@@ -10,8 +10,19 @@ namespace EasySaveAppV0
         static void Main(string[] args)
         {
             Console.WriteLine("EasySave.v1 - Make your language choice");
-            //LanguagechoiceFunction
+            ChoiceLang();
             Choice();
+        }
+        public static void ChoiceLang()
+        {
+            Console.WriteLine("en : English");
+            Console.WriteLine("fr :Français");
+            string langChoice = Console.ReadLine();
+            switch (langChoice)
+            {
+                case "en":
+            }
+
         }
         public static void Choice()
         {
