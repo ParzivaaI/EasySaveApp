@@ -16,21 +16,16 @@ namespace EasySaveAppV0
         public static void Choice()
         {
             FileEditing ObjfileEditing = new FileEditing();
-            Console.WriteLine("Easysave - make your choice");
-            Console.WriteLine("1.  Create a save");
-            Console.WriteLine("2.  Read the daily log");
-            Console.WriteLine("3.  Read daily saves states");
+            Console.WriteLine("Easysave - make your choice\r\n 1.  Create a save \r\n 2.  Read the daily log \r\n 3.  Read daily saves states");
             string menuChoice = Console.ReadLine();
             switch (menuChoice)
             {
                 case "1": //Creating a backup
                     Console.WriteLine("Path that you want to copy (drop the file/folder)");
-                    string copypath = Console.ReadLine();
+                    string copypath = Console.ReadLine(); //String for the copied path
                     Console.WriteLine("Path where to paste the copy (drop the file/folder)");
-                    string pathpaste = Console.ReadLine();
-                    Console.WriteLine("Choose the type of backup you wanna do:");
-                    Console.WriteLine("1. Differential");
-                    Console.WriteLine("2. Complete");
+                    string pathpaste = Console.ReadLine(); //String for the pasted path
+                    Console.WriteLine("Choose the type of backup you wanna do:\r\n 1. Differential \r\n 2. Complete") ;
                     string savechoice = Console.ReadLine();
                     if (savechoice=="1")
                     {
