@@ -21,15 +21,14 @@ namespace EasySaveAppV0
 
         protected static void ChoiceLang()
         {           
-            Language ObjLanguage = new Language(); //appel des différentes fonction utile?
-            
-            ObjLanguage.ChoiceLanguage();
-            
+            Language ObjLanguage = new Language();           
+            ObjLanguage.ChoiceLanguage();     // Go to Languages.cs       
         }
         public static void Choice()
         {
-            Language UseLanguage= new Language();
+            Language UseLanguage= new Language();//accès à la classe Language
             FileEditing ObjfileEditing = new FileEditing();
+            Language.French Frenchy = new Language.French(); //accès à la classse French
             Console.WriteLine();//Easysave - make your choice
             Console.WriteLine("1.  Create a save");
             Console.WriteLine("2.  Read the daily log");

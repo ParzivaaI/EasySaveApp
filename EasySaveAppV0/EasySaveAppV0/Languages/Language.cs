@@ -6,11 +6,18 @@ using System.Xml.Serialization;
 namespace EasySaveAppV0.Languages
 {
     class Language
-    {
-        int choix;
+    {          
         
-        public  Language() { }
+        public class French
+        {
+            string welcome = "oui";
+        }
+        class English
+        {
 
+
+        }
+        public  Language() { }
         public void ChoiceLanguage()
         {
             Console.WriteLine("en : English");
@@ -20,8 +27,7 @@ namespace EasySaveAppV0.Languages
             switch (langChoice)
             {
                 case "en":
-                    LanguageEN();
-                    
+                    LanguageEN();                    
                    // numLanguage = 0;
                     break;
                 case "fr":
@@ -30,27 +36,22 @@ namespace EasySaveAppV0.Languages
                     break;
                 default:
                     Console.WriteLine("Please enter a valid choice");
-                    ChoiceLanguage();
-                    
-                    
-                    break;
-
+                    ChoiceLanguage();                  
+                    break;          
+             }
             
-            
-            }
-            
-        }     
+        }    
+        
+        
         public void LanguageFR() 
         {
-            string optinchoice = "Easysave - Faites votre choix";
-
-
-
+            French language = new French();
+            
 
         }
         public void LanguageEN() 
         {
-            string optinchoice = "Easysave - make your choice";
+            English language= new English();
 
         }
        
