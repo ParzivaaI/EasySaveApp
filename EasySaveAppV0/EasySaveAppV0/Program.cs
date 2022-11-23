@@ -2,6 +2,7 @@
 using System.IO;
 
 using EasySaveAppV0.Search;
+using EasySaveAppV0.Languages;
 
 namespace EasySaveAppV0
 {
@@ -15,9 +16,20 @@ namespace EasySaveAppV0
         }
         public static void ChoiceLang()
         {
+            Language ObjLanguage = new Language();
             Console.WriteLine("en : English");
             Console.WriteLine("fr :Français");
             string langChoice = Console.ReadLine();
+            switch (langChoice) {
+                case "en":
+                    ObjLanguage.LanguageEN();
+                    break;
+                case "fr":
+                    ObjLanguage.LanguageFR(); 
+                    break;          
+            
+            }
+            
            
         }
         public static void Choice()
