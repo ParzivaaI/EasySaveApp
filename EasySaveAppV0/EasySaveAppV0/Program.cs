@@ -22,6 +22,8 @@ namespace EasySaveAppV0
             switch (menuChoice)
             {
                 case "1": //Creating a backup
+                    Console.WriteLine("Name of the folder/Nom du dossier");
+                    string directoryName = Console.ReadLine();
                     Console.WriteLine("Path that you want to copy (drop the file/folder) / Chemin que vous souhaitez copier (déposez le fichier/dossier)");
                     string copyPath = Console.ReadLine(); //String for the copied path
                     Console.WriteLine("Path where to paste the copy (drop the file/folder) / Chemin où coller la copie (déposer le fichier/dossier)");
