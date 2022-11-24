@@ -30,14 +30,15 @@ namespace EasySaveAppV0
                     string pathPaste = Console.ReadLine(); //String for the pasted path
                     Console.WriteLine("Choose the type of backup you wanna do:\r\n 1. Differential \r\n 2. Complete") ;
                     string savechoice = Console.ReadLine();
+                    ObjfileEditing.Variables(directoryName, copyPath, pathPaste);
                     if (savechoice=="1")
                     {
-                        ObjfileEditing.DiffSave(directoryName,copyPath, pathPaste);
+                        ObjfileEditing.DiffSave();
                         Console.WriteLine("Differential save completed.");
                     }
                     else if(savechoice=="2")
                     {
-                        ObjfileEditing.CompleteSave(directoryName,copyPath, pathPaste);
+                        ObjfileEditing.CompleteSave();
                         Console.WriteLine("Complete Save completed.");
                     }
                     else
