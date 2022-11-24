@@ -2,6 +2,7 @@
 using System.IO;
 
 using EasySaveAppV0.Search;
+using EasySaveAppV0.language;
 
 namespace EasySaveAppV0
 {
@@ -21,20 +22,22 @@ namespace EasySaveAppV0
             switch (menuChoice)
             {
                 case "1": //Creating a backup
+                    Console.WriteLine("Name of the save:");
+                    string directoryName = Console.ReadLine(); //String for the copied path
                     Console.WriteLine("Path that you want to copy (drop the file/folder)");
-                    string copypath = Console.ReadLine(); //String for the copied path
+                    string copyPath = Console.ReadLine(); //String for the copied path
                     Console.WriteLine("Path where to paste the copy (drop the file/folder)");
-                    string pathpaste = Console.ReadLine(); //String for the pasted path
+                    string pathPaste = Console.ReadLine(); //String for the pasted path
                     Console.WriteLine("Choose the type of backup you wanna do:\r\n 1. Differential \r\n 2. Complete") ;
                     string savechoice = Console.ReadLine();
                     if (savechoice=="1")
                     {
-                        ObjfileEditing.DiffSave(copypath, pathpaste);
+                        ObjfileEditing.DiffSave(directoryName,copyPath, pathPaste);
                         Console.WriteLine("Differential save completed.");
                     }
                     else if(savechoice=="2")
                     {
-                        ObjfileEditing.CompleteSave(copypath, pathpaste);
+                        ObjfileEditing.CompleteSave(directoryName,copyPath, pathPaste);
                         Console.WriteLine("Complete Save completed.");
                     }
                     else
