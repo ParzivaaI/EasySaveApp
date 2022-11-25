@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4ZnVAPakoReU88uzHjQZAsch9q7wjfcsAtc8++MBh8tMpnObD8XJuJPDijJaEDcNfnJ6jY+4oZULr8+cMOYXlg==",
+  "dgSpecHash": "PpMNR+ZycHs3XBrDvXdCBJjUKPfALIIACBeVPH9uC1JKDscMOpu8sGJN9oA6RuzXl6oIVKZ4nKlOwF9M3vQzAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\33767\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\33767\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
