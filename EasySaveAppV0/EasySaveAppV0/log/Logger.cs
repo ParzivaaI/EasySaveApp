@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
-using System.Reflection;
-using System.Timers;
+
 
 using EasySaveAppV0.Search;
     
@@ -14,6 +11,12 @@ using EasySaveAppV0.Search;
 {
     public class Logger 
 {
+
+        public string FName { get; set; }
+        public string FileSource { get; set; }
+        public string FileTarget { get; set; }
+        public long FileSize { get; set; }
+        public DateTimeOffset Time { get; set; }
 
         //define log 
         public string CurrentDirectory
@@ -39,24 +42,19 @@ using EasySaveAppV0.Search;
 
     public Logger()
         {
-            this.CurrentDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+            // Create a JSON files in the project folder
+            string workingDirectory = Environment.CurrentDirectory;
+            this.CurrentDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
             this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
             this.FilePath = this.CurrentDirectory + "/" + this.FileName;
         }
 
-        public void SaveLog(string adresscopy, string adresspast, string FName)
+public void SaveLog(string message)
         {
-           
             using (System.IO.StreamWriter w = System.IO.File.AppendText(this.FilePath))
             {
-                // Output log details
-                w.Write("Name : {0} \n", FName);
-                w.Write("FileSource : {0} \n", adresscopy);
-                w.Write("FileTarget : {0} \n", adresspast);
-                w.Write("Time : {0} {1} \n", DateTime.Now.ToShortDateString(),DateTime.Now.ToLongTimeString());
-                w.Write("FileSize : {0} \n", adresscopy.Length);
-                w.Write("\n");
+                w.Write("{0} \n", message);
             }
         }
-    }
+}
 }
