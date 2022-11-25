@@ -39,8 +39,7 @@ using EasySaveAppV0.Search;
 
     public Logger()
         {
-            string workingDirectory = Environment.CurrentDirectory;
-            this.CurrentDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+            this.CurrentDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
             this.FilePath = this.CurrentDirectory + "/" + this.FileName;
         }
@@ -50,14 +49,12 @@ using EasySaveAppV0.Search;
            
             using (System.IO.StreamWriter w = System.IO.File.AppendText(this.FilePath))
             {
-
                 w.Write("Name : {0} \n", FName);
                 w.Write("FileSource : {0} \n", adresscopy);
                 w.Write("FileTarget : {0} \n", adresspast);
                 w.Write("Time : {0} {1} \n", DateTime.Now.ToShortDateString(),DateTime.Now.ToLongTimeString());
                 w.Write("FileSize : {0} \n", adresscopy.Length);
                 w.Write("\n");
-
             }
         }
     }
