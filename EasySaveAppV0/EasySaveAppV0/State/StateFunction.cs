@@ -9,7 +9,7 @@ using EasySaveAppV0.Search;
     
     
  
-   namespace EasySaveAppV0.log
+   namespace EasySaveAppV0.state
 
 {
     public class StateFunction 
@@ -40,27 +40,34 @@ using EasySaveAppV0.Search;
             set;
         }
 
-    public StateFunction()
+        public int FileLength
         {
-            this.CurrentDirectory = @"C:\EasySave\Log";
-            this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
-            this.FilePath = this.CurrentDirectory + "/" + this.FileName;
+            get;
+            set;
         }
 
-        public void StateCreate(string adresscopy, string adresspast, string FName)
+        public StateFunction()
         {
-           
-            using (System.IO.StreamWriter w = System.IO.File.AppendText(this.FilePath))
-            {
+            this.CurrentDirectory = @"C:\EasySave\State";
+            this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
+            this.FilePath = this.CurrentDirectory + "/" + this.FileName;
+            this.FileLength = 0;
+        }
 
-                w.Write("Name : {0} \n", FName);
-                w.Write("FileSource : {0} \n", adresscopy);
-                w.Write("FileTarget : {0} \n", adresspast);
-                w.Write("Time : {0} {1} \n", DateTime.Now.ToShortDateString(),DateTime.Now.ToLongTimeString());
-                w.Write("FileSize : {0} \n", adresscopy.Length);
-                w.Write("\n");
-
-            }
+        public void StateCreate(string adresscopy, string adresspast, string FName,bool isActive, int filesLeft, long totalFileSize)
+        {
+                this.FileLength = filesLeft;
+                using (System.IO.StreamWriter w = System.IO.File.AppendText(this.FilePath))
+                {
+                    w.Write("Name : {0} \n", FName);
+                    w.Write("FileSource : {0} \n", adresscopy);
+                    w.Write("FileTarget : {0} \n", adresspast);
+                    w.Write("Time : {0} {1} \n", DateTime.Now.ToShortDateString(),DateTime.Now.ToLongTimeString());
+                    w.Write("FilesLeft : {0} \n", FileLength);
+                    w.Write("Active: {0}\n",isActive);
+                    w.Write("Size: {0}\n", totalFileSize);
+                    w.Write("\n");
+                }
         }
     }
 }

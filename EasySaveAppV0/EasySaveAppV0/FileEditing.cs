@@ -3,6 +3,7 @@ using System.IO;
 
 
 using EasySaveAppV0.log;
+using EasySaveAppV0.state;
 
 namespace EasySaveAppV0.Search
 { 
@@ -20,16 +21,39 @@ namespace EasySaveAppV0.Search
         }
         public void CompleteSave()
         {
+            int LeftToTransfer=Directory.GetFiles(copyDirectory).Length;
+            bool stateIsActive=true;
+            long totalFileSize = 0;
             pasteDirectory += @"\" + name;
+            //créer la state
+            StateFunction ObjStateFunction = new StateFunction();
             //créer les dossiers
             foreach (string dirPath in Directory.GetDirectories(copyDirectory, "*",SearchOption.AllDirectories))
+            { 
                 Directory.CreateDirectory(dirPath.Replace(copyDirectory, pasteDirectory)); //créer le dossier dans la nouvelle sauvegarde pour chaque dossier existant
-
+            }
             //Copying all the files, replace if same name
-            foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*",SearchOption.AllDirectories))
+            foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*", SearchOption.AllDirectories))
+            {
+                totalFileSize += newPath.Length;
+            }
+            foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*", SearchOption.AllDirectories))
+            {   
                 File.Copy(newPath, newPath.Replace(copyDirectory, pasteDirectory), true);
-                Logger Logg = new Logger();
-                Logg.SaveLog(copyDirectory, pasteDirectory, name);
+                LeftToTransfer--;
+                totalFileSize -= newPath.Length;
+                if (LeftToTransfer>=0)
+                {
+                    stateIsActive = true;
+                }
+                else
+                {
+                    stateIsActive = false;
+                }
+                ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive,LeftToTransfer, totalFileSize);
+            }
+            Logger Logg = new Logger();
+            Logg.SaveLog(copyDirectory, pasteDirectory, name);
         }
         public void DiffSave()
         {
