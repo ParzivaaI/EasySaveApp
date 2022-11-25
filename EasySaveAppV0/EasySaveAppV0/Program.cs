@@ -31,7 +31,7 @@ namespace EasySaveAppV0
                     string pathPaste = Console.ReadLine(); //String for the pasted path
                     Console.WriteLine("Choose the type of backup you wanna do / Choisissez le type de sauvegarde que vous voulez faire:\r\n 1. Differential / Différentiel \r\n 2. Complete / Complète") ;
                     string saveChoice = Console.ReadLine();
-                    //int sizeofFiles = Directory.GetFiles(copyPath).Length;
+                    int sizeofFiles = Directory.GetFiles(copyPath).Length;
                     ObjfileEditing.Variables(directoryName, copyPath, pathPaste, sizeofFiles);
                     if (saveChoice=="1")
                     {
