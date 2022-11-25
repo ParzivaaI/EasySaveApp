@@ -1,12 +1,3 @@
-Name : testastos 
-FileSource : C:\Users\valen\OneDrive\Bureau\CESI\FISE3\CER 
-FileTarget : C:\Users\valen\OneDrive\Bureau\CESI\FISE3\Test\testastos 
-Time : 11/25/2022 3:02:29 PM 
-FileSize : 45 
-
-Name : test 
-FileSource : C:\Users\33767\Documents\CESI 
-FileTarget : C:\Users\33767\Documents\CESI\test 2\test 
-Time : 25/11/2022 14:31:54 
-FileSize : 29 
-
+{"FName":"go","FileSource":"C:\\Users\\33767\\Documents\\CESI\\test 2","FileTarget":"C:\\Users\\33767\\Documents\\CESI\\test\\go","FileSize":67,"Time":"2022-11-25T21:30:27.8671643+01:00","CurrentDirectory":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0","FileName":"25-11-2022.json","FilePath":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0/25-11-2022.json"} 
+{"FName":"gooo","FileSource":"C:\\Users\\33767\\Documents\\CESI\\test 2","FileTarget":"C:\\Users\\33767\\Documents\\CESI\\test\\gooo","FileSize":67,"Time":"2022-11-25T21:32:18.6015788+01:00","CurrentDirectory":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0","FileName":"25-11-2022.json","FilePath":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0/25-11-2022.json"} 
+{"FName":"gooooo","FileSource":"C:\\Users\\33767\\Documents\\CESI\\test 2","FileTarget":"C:\\Users\\33767\\Documents\\CESI\\test\\gooooo","FileSize":67,"Time":"2022-11-25T21:37:43.590718+01:00","CurrentDirectory":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0","FileName":"25-11-2022.json","FilePath":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0/25-11-2022.json"} 
