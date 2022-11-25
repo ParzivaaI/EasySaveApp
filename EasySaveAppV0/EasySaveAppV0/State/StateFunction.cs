@@ -12,7 +12,7 @@ using EasySaveAppV0.Search;
    namespace EasySaveAppV0.log
 
 {
-    public class ALogger 
+    public class StateFunction 
 {
         private static System.Timers.Timer aTimer;
         
@@ -40,14 +40,14 @@ using EasySaveAppV0.Search;
             set;
         }
 
-    public Logger()
+    public StateFunction()
         {
             this.CurrentDirectory = @"C:\EasySave\Log";
             this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
             this.FilePath = this.CurrentDirectory + "/" + this.FileName;
         }
 
-        public void SaveLog(string adresscopy, string adresspast, string FName)
+        public void StateCreate(string adresscopy, string adresspast, string FName)
         {
            
             using (System.IO.StreamWriter w = System.IO.File.AppendText(this.FilePath))
