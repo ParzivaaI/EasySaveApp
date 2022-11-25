@@ -42,8 +42,9 @@ using EasySaveAppV0.Search;
         public StateFunction()
         {
             //Ajoute les informations à la création du fichier json de départ
-            this.CurrentDirectory = @"C:\EasySave\State";
-            this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
+            string workingDirectory = Environment.CurrentDirectory;
+            this.CurrentDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+            this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + " State.json";
             this.FilePath = this.CurrentDirectory + "/" + this.FileName;
             this.FileLength = 0;
         }
