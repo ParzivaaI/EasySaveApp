@@ -49,6 +49,7 @@ using EasySaveAppV0.Search;
            
             using (System.IO.StreamWriter w = System.IO.File.AppendText(this.FilePath))
             {
+                // Output log details
                 w.Write("Name : {0} \n", FName);
                 w.Write("FileSource : {0} \n", adresscopy);
                 w.Write("FileTarget : {0} \n", adresspast);
