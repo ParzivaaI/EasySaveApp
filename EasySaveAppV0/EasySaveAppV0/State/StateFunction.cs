@@ -13,19 +13,12 @@ using EasySaveAppV0.Search;
 
 {
     public class StateFunction 
-{
-        private static System.Timers.Timer aTimer;
-        
-        int secondCount = 0;
-
-        //define log 
+{ 
         public string CurrentDirectory
         {
             get;
             set;
         }
-
-    //...
 
     public String FileName
     {
@@ -48,6 +41,7 @@ using EasySaveAppV0.Search;
 
         public StateFunction()
         {
+            //Ajoute les informations à la création du fichier json de départ
             this.CurrentDirectory = @"C:\EasySave\State";
             this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
             this.FilePath = this.CurrentDirectory + "/" + this.FileName;
