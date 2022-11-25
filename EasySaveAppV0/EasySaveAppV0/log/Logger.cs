@@ -39,9 +39,7 @@ using EasySaveAppV0.Search;
 
     public Logger()
         {
-            // Create a JSON files in the project folder
-            string workingDirectory = Environment.CurrentDirectory;
-            this.CurrentDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+            this.CurrentDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             this.FileName = DateTime.Now.ToString("dd-MM-yyyy") + ".json";
             this.FilePath = this.CurrentDirectory + "/" + this.FileName;
         }
@@ -58,7 +56,6 @@ using EasySaveAppV0.Search;
                 w.Write("Time : {0} {1} \n", DateTime.Now.ToShortDateString(),DateTime.Now.ToLongTimeString());
                 w.Write("FileSize : {0} \n", adresscopy.Length);
                 w.Write("\n");
-
             }
         }
     }
