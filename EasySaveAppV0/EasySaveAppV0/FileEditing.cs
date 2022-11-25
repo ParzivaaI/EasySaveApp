@@ -96,7 +96,17 @@ namespace EasySaveAppV0.Search
                     }
                     ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive, leftToTransfer, totalFileSize);
                 }
-
+              var date = DateTime.Now;
+            var logger = new Logger
+            {
+                FName = name ,
+                FileSource = copyDirectory,
+                FileTarget = pasteDirectory,
+                FileSize = totalFileSize,
+                Time = date
+            };
+            string jsonString = JsonSerializer.Serialize(logger);
+            logger.SaveLog(jsonString);
         }
     }
 }
