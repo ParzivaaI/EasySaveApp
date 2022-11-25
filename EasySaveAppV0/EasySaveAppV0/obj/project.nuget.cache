@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iZq9vvYfaQjbhDSRmoPcFI7ImkbeR0HmTkGNIw2rjqVGfpRciZHFmrTe1vqfzvXU20RT3ZnnEWYOeZ94bhhvqg==",
+  "dgSpecHash": "4ZnVAPakoReU88uzHjQZAsch9q7wjfcsAtc8++MBh8tMpnObD8XJuJPDijJaEDcNfnJ6jY+4oZULr8+cMOYXlg==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\A\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\valen\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
