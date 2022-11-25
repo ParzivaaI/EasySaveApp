@@ -63,10 +63,18 @@ namespace EasySaveAppV0.Search
             StateFunction ObjStateFunction = new StateFunction();
             //créer les dossiers
             foreach (string dirPath in Directory.GetDirectories(copyDirectory, "*",SearchOption.AllDirectories))
-                if(Directory.GetLastAccessTime(dirPath)>Directory.GetLastAccessTime(copyDirectory))
-                { 
+            {
+
+                if (Directory.GetFileSystemEntries(pasteDirectory) == null)
+                {
+                    Console.WriteLine("Error, there is no files in this path / Erreur, il n'y pas de fichier dans ce dossier ");
+                    DiffSave();
+                }
+                if (Directory.GetLastAccessTime(dirPath) > Directory.GetLastAccessTime(copyDirectory))
+                {
                     Directory.CreateDirectory(dirPath.Replace(copyDirectory, pasteDirectory));
                 }
+            }
             //Copie les fichiers, remplace si nom identique
             foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*",SearchOption.AllDirectories))
                 if (File.GetLastAccessTime(newPath) > File.GetLastAccessTime(newPath.Replace(copyDirectory, pasteDirectory)))

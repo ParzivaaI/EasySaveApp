@@ -54,3 +54,17 @@ C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\ne
 C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.dll
 C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.pdb
 C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.genruntimeconfig.cache
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.exe
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.deps.json
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.runtimeconfig.json
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.runtimeconfig.dev.json
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.dll
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.pdb
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.csproj.AssemblyReference.cache
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.GeneratedMSBuildEditorConfig.editorconfig
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.AssemblyInfoInputs.cache
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.AssemblyInfo.cs
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.csproj.CoreCompileInputs.cache
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.dll
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.pdb
+D:\Utilitaires\Bureau\Easysave\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.genruntimeconfig.cache

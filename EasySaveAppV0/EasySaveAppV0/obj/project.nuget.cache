@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "iZq9vvYfaQjbhDSRmoPcFI7ImkbeR0HmTkGNIw2rjqVGfpRciZHFmrTe1vqfzvXU20RT3ZnnEWYOeZ94bhhvqg==",
+  "dgSpecHash": "ASjTfMUnJEU4bms/jWClWx0kdCXfDOg7AdoKGEbX2+N8l+LiIn2ov0qupU0QYC2LQJ7ES+Ncap71NDKzOK2H0w==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\A\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
+  "projectFilePath": "D:\\Utilitaires\\Bureau\\Easysave\\EasySaveAppV0\\EasySaveAppV0\\EasySaveAppV0.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\valen\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+    "C:\\Users\\jbdel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\jbdel\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\jbdel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\jbdel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.31\\microsoft.netcore.app.host.win-x64.3.1.31.nupkg.sha512"
   ],
   "logs": []
 }
