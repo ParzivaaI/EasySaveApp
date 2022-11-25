@@ -40,3 +40,17 @@ D:\Git\ché pa\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0
 D:\Git\ché pa\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.dll
 D:\Git\ché pa\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.pdb
 D:\Git\ché pa\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.genruntimeconfig.cache
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.csproj.AssemblyReference.cache
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.AssemblyInfoInputs.cache
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.AssemblyInfo.cs
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.csproj.CoreCompileInputs.cache
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.dll
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.pdb
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.exe
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.deps.json
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.runtimeconfig.json
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.runtimeconfig.dev.json
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.dll
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.pdb
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.genruntimeconfig.cache

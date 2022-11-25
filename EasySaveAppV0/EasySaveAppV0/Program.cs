@@ -3,6 +3,7 @@ using System.IO;
 
 using EasySaveAppV0.Search;
 using EasySaveAppV0.language;
+using EasySaveAppV0.log;
 
 namespace EasySaveAppV0
 {
@@ -29,14 +30,15 @@ namespace EasySaveAppV0
                     Console.WriteLine("Path where to paste the copy (drop the file/folder) / Chemin où coller la copie (déposer le fichier/dossier)");
                     string pathPaste = Console.ReadLine(); //String for the pasted path
                     Console.WriteLine("Choose the type of backup you wanna do / Choisissez le type de sauvegarde que vous voulez faire:\r\n 1. Differential / Différentiel \r\n 2. Complete / Complète") ;
-                    string savechoice = Console.ReadLine();
-                    ObjfileEditing.Variables(directoryName, copyPath, pathPaste);
-                    if (savechoice=="1")
+                    string saveChoice = Console.ReadLine();
+                    int sizeofFiles = Directory.GetFiles(copyPath).Length;
+                    ObjfileEditing.Variables(directoryName, copyPath, pathPaste, sizeofFiles);
+                    if (saveChoice=="1")
                     {
                         ObjfileEditing.DiffSave();
                         Console.WriteLine("Differential save completed / Sauvegarde différentiel terminé.");
                     }
-                    else if(savechoice=="2")
+                    else if(saveChoice=="2")
                     {
                         ObjfileEditing.CompleteSave();
                         Console.WriteLine("Complete save completed Sauvegarde complète terminé.");
