@@ -50,14 +50,14 @@ namespace EasySaveAppV0
                     Console.ReadKey(); //awaiting input to leave
                     break;
                 case "2": //Daily log to print
-                    //SearchFile.Read();
+                    Console.WriteLine(File.ReadAllText(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName+@"\"+DateTime.Now.ToString("dd-MM-yyyy")+".json"));
                     break;
                 case "3": // Daily save state to print
+                    Console.WriteLine(File.ReadAllText(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\" + DateTime.Now.ToString("dd-MM-yyyy") + " State.json"));
                     break;
                 default:
                     Console.WriteLine("Error. Please enter a valid choice / Erreur. Veuillez entrer un choix valide.\n");
                     Program.Choice();
-
                     break;
             }
         }
