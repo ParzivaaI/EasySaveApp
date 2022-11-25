@@ -1,12 +1,2 @@
-Name : test 
-FileSource : C:\Users\33767\Documents\CESI\test 
-FileTarget : C:\Users\33767\Documents\CESI\test\test past\test 
-Time : 25/11/2022 14:05:32 
-FileSize : 34 
-
-Name : test 
-FileSource : C:\Users\33767\Documents\CESI 
-FileTarget : C:\Users\33767\Documents\CESI\test 2\test 
-Time : 25/11/2022 14:31:54 
-FileSize : 29 
-
+{"FName":"rfrgr","adresscopy":"C:\\Users\\33767\\Documents\\CESI\\test 2","adresspast":"C:\\Users\\33767\\Documents\\CESI\\test\\rfrgr","size":67,"datetime":"2022-11-25T20:53:04.3542514+01:00","CurrentDirectory":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0","FileName":"25-11-2022.json","FilePath":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0/25-11-2022.json"} 
+{"FName":"hihi","FileSource":"C:\\Users\\33767\\Documents\\CESI\\test 2","FileTarget":"C:\\Users\\33767\\Documents\\CESI\\test\\hihi","FileSize":67,"Time":"2022-11-25T21:13:54.8867767+01:00","CurrentDirectory":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0","FileName":"25-11-2022.json","FilePath":"C:\\Users\\33767\\source\\repos\\EasySaveApp\\EasySaveAppV0\\EasySaveAppV0/25-11-2022.json"} 

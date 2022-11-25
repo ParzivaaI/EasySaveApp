@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.Json;
 
 
 using EasySaveAppV0.log;
@@ -42,7 +43,7 @@ namespace EasySaveAppV0.Search
                 bool stateIsActive;
                 File.Copy(newPath, newPath.Replace(copyDirectory, pasteDirectory), true);
                 leftToTransfer--;
-                totalFileSize -= newPath.Length;
+                totalFileSize = newPath.Length;
                 if (leftToTransfer >= 0)
                 {
                     stateIsActive = true;
@@ -53,8 +54,18 @@ namespace EasySaveAppV0.Search
                 }
                 ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive, leftToTransfer, totalFileSize);
             }
-            Logger Logg = new Logger();
-            Logg.SaveLog(copyDirectory, pasteDirectory, name);
+            var date = DateTime.Now;
+            var logger = new Logger
+            {
+                FName = name ,
+                FileSource = copyDirectory,
+                FileTarget = pasteDirectory,
+                FileSize = totalFileSize,
+                Time = date
+            };
+            string jsonString = JsonSerializer.Serialize(logger);
+            logger.SaveLog(jsonString);
+
         }
         public void DiffSave()
         {
@@ -85,8 +96,7 @@ namespace EasySaveAppV0.Search
                     }
                     ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive, leftToTransfer, totalFileSize);
                 }
-            Logger Logg = new Logger();
-            Logg.SaveLog(copyDirectory, pasteDirectory, name);
+
         }
     }
 }

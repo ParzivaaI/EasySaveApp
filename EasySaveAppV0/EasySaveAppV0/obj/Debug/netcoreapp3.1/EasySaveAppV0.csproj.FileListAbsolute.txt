@@ -54,3 +54,6 @@ C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\ne
 C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.dll
 C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\EasySaveAppV0.pdb
 C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.genruntimeconfig.cache
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\33767\source\repos\EasySaveApp\EasySaveAppV0\EasySaveAppV0\obj\Debug\netcoreapp3.1\EasySaveAppV0.csproj.CopyComplete
