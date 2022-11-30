@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valen\\source\\repos\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj": {}
+    "D:\\Utilitaires\\Bureau\\project\\EasySaveApp\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valen\\source\\repos\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj": {
+    "D:\\Utilitaires\\Bureau\\project\\EasySaveApp\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valen\\source\\repos\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj",
+        "projectUniqueName": "D:\\Utilitaires\\Bureau\\project\\EasySaveApp\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj",
         "projectName": "EasySaveAppV2",
-        "projectPath": "C:\\Users\\valen\\source\\repos\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj",
-        "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\source\\repos\\EasySaveAppV2\\EasySaveAppV2\\obj\\",
+        "projectPath": "D:\\Utilitaires\\Bureau\\project\\EasySaveApp\\EasySaveAppV2\\EasySaveAppV2\\EasySaveAppV2.csproj",
+        "packagesPath": "C:\\Users\\jbdel\\.nuget\\packages\\",
+        "outputPath": "D:\\Utilitaires\\Bureau\\project\\EasySaveApp\\EasySaveAppV2\\EasySaveAppV2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jbdel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,14 +49,27 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.25, 3.1.25]"
+              "version": "[3.1.31, 3.1.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -63,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
