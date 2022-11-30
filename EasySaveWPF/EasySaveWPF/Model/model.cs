@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EasySaveWPF.View;
+using Newtonsoft.Json;
 
 namespace EasySaveWPF.Model
 {
@@ -60,6 +61,19 @@ namespace EasySaveWPF.Model
                     Console.WriteLine("Error. Please enter a valid choice / Erreur. Veuillez entrer un choix valide.\n");
                     Program.Choice();
                     break;
+            }
+        }
+        public static string[] GetBlackList()//Fonction pour obtenir la liste noire des programmes
+        {
+            using (StreamReader blacklistreader = new StreamReader(@"..\..\..\Ressources\BusinessSoftwareBlacklist.json"))
+            {
+                BlackList[] theblacklist;
+                string[] blacklist_array;
+                string tojson = blacklistreader.ReadToEnd();
+                List<BlackList> items = JsonConvert.DeserializeObject<List<BlackList>>(tojson);
+                theblacklist = items.ToArray();
+                blacklist_array = theblacklist[0].black_list.Split(',');
+                return blacklist_array;//retour des noms des programmes dans la blacklist
             }
         }
     }
