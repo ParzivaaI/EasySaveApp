@@ -1,21 +1,16 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EasySaveWPF.View;
 
 namespace EasySaveWPF.Model
 {
-    internal class Model
+    class Program
     {
-        public static void RunApp(string[] args)
+        /*static void Main(string[] args)
         {
-            //  Console.WriteLine("EasySave.v1 - Make your language choice");
+          //  Console.WriteLine("EasySave.v1 - Make your language choice");
             //LanguagechoiceFunction
             Choice();
-        }
+        }*/
         public static void Choice()
         {
             FileEditing ObjfileEditing = new FileEditing();
@@ -30,16 +25,16 @@ namespace EasySaveWPF.Model
                     string copyPath = Console.ReadLine(); //String for the copied path
                     Console.WriteLine("Path where to paste the copy (drop the file/folder) / Chemin où coller la copie (déposer le fichier/dossier)");
                     string pathPaste = Console.ReadLine(); //String for the pasted path
-                    Console.WriteLine("Choose the type of backup you wanna do / Choisissez le type de sauvegarde que vous voulez faire:\r\n 1. Differential / Différentiel \r\n 2. Complete / Complète");
+                    Console.WriteLine("Choose the type of backup you wanna do / Choisissez le type de sauvegarde que vous voulez faire:\r\n 1. Differential / Différentiel \r\n 2. Complete / Complète") ;
                     string saveChoice = Console.ReadLine();
                     int sizeofFiles = Directory.GetFiles(copyPath).Length;
                     ObjfileEditing.Variables(directoryName, copyPath, pathPaste, sizeofFiles);
-                    if (saveChoice == "1")
+                    if (saveChoice=="1")
                     {
                         ObjfileEditing.DiffSave();
                         Console.WriteLine("Differential save completed / Sauvegarde différentiel terminé.");
                     }
-                    else if (saveChoice == "2")
+                    else if(saveChoice=="2")
                     {
                         ObjfileEditing.CompleteSave();
                         Console.WriteLine("Complete save completed Sauvegarde complète terminé.");
@@ -51,7 +46,7 @@ namespace EasySaveWPF.Model
                     Console.ReadKey(); //awaiting input to leave
                     break;
                 case "2": //Daily log to print
-                    Console.WriteLine(File.ReadAllText(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\" + DateTime.Now.ToString("dd-MM-yyyy") + ".json"));
+                    Console.WriteLine(File.ReadAllText(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName+@"\"+DateTime.Now.ToString("dd-MM-yyyy")+".json"));
                     break;
                 case "3": // Daily save state to print
                     Console.WriteLine(File.ReadAllText(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\" + DateTime.Now.ToString("dd-MM-yyyy") + " State.json"));
