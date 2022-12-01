@@ -35,7 +35,6 @@
 
             <RadioButton 
                 Content="English"
-                 
                 Margin="768,10,10,0" 
                 Foreground="White" 
                 FontSize="22" 
@@ -47,7 +46,6 @@
                              />
             <RadioButton 
                 Content="Français"
-                 
                 Margin="626,10,152,0" 
                 Foreground="White" 
                 FontSize="22" 
@@ -57,7 +55,7 @@
                 Height="65"
                              
                              />
-            <Button Content="Display LOG" 
+            <Button Content="Display LOG"
                     HorizontalAlignment="Left" 
                     Margin="411,-2,0,12" 
                     VerticalAlignment="Center" 
@@ -65,7 +63,9 @@
                     Width="170" 
                     Height="65" 
                     IsCancel="True"
-                    FontFamily="Yu Gothic UI Semibold" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" 
+                    FontFamily="Yu Gothic UI Semibold" BorderBrush="{x:Null}" 
+                    Background="{x:Null}" 
+                    Foreground="White" 
                              />
             <Button Content="SAVE" 
                     HorizontalAlignment="Left" 
@@ -87,12 +87,63 @@
                        FontSize="36" 
                        Foreground="White" 
                        FontWeight="Bold"><Run Foreground="#FFE45151" Text="E"/><Run Text="asy"/><Run Foreground="Yellow" Text="S"/><Run Text="ave"/></TextBlock>
-            <TextBox HorizontalAlignment="Left" Height="24" Margin="124,151,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="499" TextChanged="TextBox_TextChanged"/>
-            <TextBlock HorizontalAlignment="Left" Margin="124,113,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Add the Folder source :" VerticalAlignment="Top" Height="33" Width="284" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="20" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="24" Margin="124,273,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="499"/>
-            <TextBlock HorizontalAlignment="Left" Margin="124,235,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="284" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="20" IsEnabled="False"><Run Text="Add the Folder"/><Run Text=" destination "/><Run Text=":"/></TextBlock>
-            <Button Content="Browse" HorizontalAlignment="Left" Margin="655,270,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
-                <Button.Background>
+            <TextBox HorizontalAlignment="Left" 
+                     Height="24" 
+                     Margin="124,151,0,0" 
+                     Grid.Row="1" 
+                     TextWrapping="Wrap"
+                     VerticalAlignment="Top" 
+                     Width="499" 
+                     TextChanged="TextBox_TextChanged"
+                     />
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="124,113,0,0" 
+                       Grid.Row="1"
+                       TextWrapping="Wrap"
+                       Text="Add the Folder source :"
+                       VerticalAlignment="Top" 
+                       Height="33" 
+                       Width="284"
+                       Foreground="White" 
+                       FontFamily="Yu Gothic UI Semibold"
+                       FontSize="20"
+                       IsEnabled="False"
+                       />
+            <TextBox HorizontalAlignment="Left" 
+                     Height="24" 
+                     Margin="124,273,0,0" 
+                     Grid.Row="1" 
+                     TextWrapping="Wrap"
+                     VerticalAlignment="Top" 
+                     Width="499"
+                     />
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="124,235,0,0"
+                       Grid.Row="1" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Top"
+                       Height="33"
+                       Width="284" 
+                       Foreground="White"
+                       FontFamily="Yu Gothic UI Semibold"
+                       FontSize="20"
+                       IsEnabled="False"><Run Text="Add the Folder"/><Run Text=" destination "/><Run Text=":"/></TextBlock>
+            <Button Content="Browse" 
+                    HorizontalAlignment="Left" 
+                    Margin="655,270,0,0" 
+                    Grid.Row="1" 
+                    VerticalAlignment="Top"
+                    Width="76" 
+                    Height="27"
+                    BorderBrush="{x:Null}"
+                    Foreground="#FF212438"
+                    FontFamily="Rockwell Extra Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+                    <Button.Background>
                     <LinearGradientBrush 
                         EndPoint="0.5,1" 
                         StartPoint="0.5,0">
@@ -110,9 +161,23 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button Content="Browse" HorizontalAlignment="Left" Margin="655,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
+            <Button Content="Browse"
+                    HorizontalAlignment="Left"
+                    Margin="655,151,0,0" 
+                    Grid.Row="1" 
+                    VerticalAlignment="Top"
+                    Width="76"
+                    Height="27" 
+                    BorderBrush="{x:Null}"
+                    Foreground="#FF212438"
+                    FontFamily="Rockwell Extra Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
                 <Button.Background>
-                    <LinearGradientBrush 
+                    <LinearGradientBrush
                         EndPoint="0.5,1" 
                         StartPoint="0.5,0">
                         <GradientStop Color="#FF6E7827" Offset="0"/>
