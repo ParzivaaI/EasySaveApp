@@ -91,7 +91,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="124,113,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Add the Folder source :" VerticalAlignment="Top" Height="33" Width="284" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="20" IsEnabled="False"/>
             <TextBox HorizontalAlignment="Left" Height="24" Margin="124,273,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="499"/>
             <TextBlock HorizontalAlignment="Left" Margin="124,235,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="284" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="20" IsEnabled="False"><Run Text="Add the Folder"/><Run Text=" destination "/><Run Text=":"/></TextBlock>
-            <Button Content="Browser" HorizontalAlignment="Left" Margin="655,270,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
+            <Button Content="Browse" HorizontalAlignment="Left" Margin="655,270,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
                 <Button.Background>
                     <LinearGradientBrush 
                         EndPoint="0.5,1" 
@@ -110,7 +110,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button Content="Browser" HorizontalAlignment="Left" Margin="655,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
+            <Button Content="Browse" HorizontalAlignment="Left" Margin="655,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
                 <Button.Background>
                     <LinearGradientBrush 
                         EndPoint="0.5,1" 
