@@ -6,9 +6,124 @@
         xmlns:views="clr-namespace:EasySaveWPF.View"
         xmlns:local="clr-namespace:EasySaveWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="EasySaveApp" Height="600" Width="920"
+        WindowStyle="None" 
+        AllowsTransparency="True" 
+        Background="Transparent"
         ResizeMode="NoResize"
         >
 
-    <views:MainView/>
+    <Border Background="#FF2A2651"
+            CornerRadius="35">
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition 
+                    Height="75"/>
+
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+
+
+
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <RadioButton 
+                Content="English"
+                 
+                Margin="768,10,10,0" 
+                Foreground="White" 
+                FontSize="22" 
+                FontFamily="Yu Gothic UI Semibold" 
+                VerticalAlignment="Center" 
+                Background="White" 
+                Height="65"
+                             
+                             />
+            <RadioButton 
+                Content="Français"
+                 
+                Margin="626,10,152,0" 
+                Foreground="White" 
+                FontSize="22" 
+                FontFamily="Yu Gothic UI Semibold" 
+                VerticalAlignment="Center" 
+                Background="White" 
+                Height="65"
+                             
+                             />
+            <Button Content="Display LOG" 
+                    HorizontalAlignment="Left" 
+                    Margin="411,-2,0,12" 
+                    VerticalAlignment="Center" 
+                    FontSize="26" 
+                    Width="170" 
+                    Height="65" 
+                    IsCancel="True"
+                    FontFamily="Yu Gothic UI Semibold" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" 
+                             />
+            <Button Content="SAVE" 
+                    HorizontalAlignment="Left" 
+                    Margin="218,-2,0,12" 
+                    VerticalAlignment="Center" 
+                    FontSize="26" 
+                    Width="170" 
+                    Height="65" 
+                    IsCancel="True"
+                    FontFamily="Yu Gothic UI Semibold" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontWeight="Bold" 
+                             />
+            <TextBlock HorizontalAlignment="Left" 
+                       Height="65" 
+                       Margin="30,10,0,0" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Top" 
+                       Width="188" 
+                       FontFamily="Cooper Black"
+                       FontSize="36" 
+                       Foreground="White" 
+                       FontWeight="Bold"><Run Foreground="#FFE45151" Text="E"/><Run Text="asy"/><Run Foreground="Yellow" Text="S"/><Run Text="ave"/></TextBlock>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="124,151,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="499" TextChanged="TextBox_TextChanged"/>
+            <TextBlock HorizontalAlignment="Left" Margin="124,113,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Add the Folder source :" VerticalAlignment="Top" Height="33" Width="284" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="20" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="124,273,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="499"/>
+            <TextBlock HorizontalAlignment="Left" Margin="124,235,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="284" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="20" IsEnabled="False"><Run Text="Add the Folder"/><Run Text=" destination "/><Run Text=":"/></TextBlock>
+            <Button Content="Browser" HorizontalAlignment="Left" Margin="655,270,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
+                <Button.Background>
+                    <LinearGradientBrush 
+                        EndPoint="0.5,1" 
+                        StartPoint="0.5,0">
+                        <GradientStop Color="#FF6E7827" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.722"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="377,433,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="246" Foreground="#FF64F300" FontFamily="Segoe UI Emoji" FontStyle="Italic" FontWeight="Bold" FontStretch="ExtraCondensed" TextDecorations="{x:Null}" FontSize="16"/>
+            <Button Content="Save" HorizontalAlignment="Left" Margin="438,378,0,0" Grid.Row="1" VerticalAlignment="Top" Width="111" Height="32" FontSize="18">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0B1F3C" Offset="0"/>
+                        <GradientStop Color="#FF305F99" Offset="0.704"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Browser" HorizontalAlignment="Left" Margin="655,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Height="27" BorderBrush="{x:Null}" Foreground="#FF212438" FontFamily="Rockwell Extra Bold">
+                <Button.Background>
+                    <LinearGradientBrush 
+                        EndPoint="0.5,1" 
+                        StartPoint="0.5,0">
+                        <GradientStop Color="#FF6E7827" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.722"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+        </Grid>
+
+    </Border>
+
+
 </Window>

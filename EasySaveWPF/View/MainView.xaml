@@ -8,58 +8,6 @@
              d:DesignHeight="450" d:DesignWidth="800"
              >
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="450" VerticalAlignment="Center" Width="800" Fill="#FF0B1F55" />
-        <TextBox HorizontalAlignment="Left" Margin="47,103,0,0" TextWrapping="Wrap" Text="Path " VerticalAlignment="Top" Width="437" TextChanged="TextBox_TextChanged" Height="29"/>
-        <TextBox HorizontalAlignment="Left" Margin="47,207,0,0" TextWrapping="Wrap" Text="Path" VerticalAlignment="Top" Width="437" Height="27"/>
-        <TextBlock HorizontalAlignment="Left" Margin="47,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="228" Foreground="#FFF96969" FontWeight="Bold" FontStyle="Italic"><Run Text="Fichier"/><Run Language="fr-fr" Text="/Dossier source File/Folder"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="47,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" FontWeight="Bold" FontSize="14" Height="25" Foreground="#FFF96969" FontStyle="Italic" TextDecorations="{x:Null}"><Run Text="Dossier de destination "/><Run Language="fr-fr" Text="folder"/></TextBlock>
-        <TextBlock Height="44" Margin="336,10,344,0" TextWrapping="Wrap" Width="120" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" >
-            <TextBlock.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFC5B61F" Offset="0.013"/>
-                    <GradientStop Color="#FFEE2D2D" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBlock.Foreground><Run Text=" "/><Run Text="EasySave"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="47,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="#FF352846" Width="143" FontStyle="Italic" TextDecorations="{x:Null}">
-            <TextBlock.Background>
-                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                    <GradientStop Color="#FF382F2F" Offset="0"/>
-                    <GradientStop Color="#FFFBE4E4" Offset="0.69"/>
-                </LinearGradientBrush>
-            </TextBlock.Background><Run Text="  "/><Run Text="Sauvegarde/Save"/></TextBlock>
-        <Button Content="Différentiel/Differential" HorizontalAlignment="Left" Margin="47,255,0,0" VerticalAlignment="Top" Height="36" Width="143" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1" FontWeight="Bold" BorderBrush="#FFFF8B8B">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                    <GradientStop Color="#FF762E2E"/>
-                    <GradientStop Color="#FFEEA2A2" Offset="0.88"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="Complète/Complete" HorizontalAlignment="Left" Margin="47,322,0,0" VerticalAlignment="Top" Height="34" Width="143" FontWeight="Bold" BorderBrush="#FFF09D9D">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF6A4C4C" Offset="0"/>
-                    <GradientStop Color="#FFEE8B8B" Offset="0.6"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="Browser" HorizontalAlignment="Left" Margin="511,103,0,0" VerticalAlignment="Top" Width="76" Height="29" Click="Button_Click" FontWeight="Bold" Foreground="#FF242478" FontStyle="Italic" BorderBrush="#FFC3C3C3" OpacityMask="White">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FF455D29" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="Browser" HorizontalAlignment="Left" Margin="511,207,0,0" VerticalAlignment="Top" Width="76" Height="29" Click="Button_Click" FontWeight="Bold" Foreground="#FF242478" FontStyle="Italic" BorderBrush="#FFC3C3C3" OpacityMask="White">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FF455D29" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-
 
     </Grid>
 </UserControl>
