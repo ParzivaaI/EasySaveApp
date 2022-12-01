@@ -143,7 +143,7 @@
                         <Setter Property="CornerRadius" Value="7"/>
                     </Style>
                 </Button.Resources>
-                    <Button.Background>
+                <Button.Background>
                     <LinearGradientBrush 
                         EndPoint="0.5,1" 
                         StartPoint="0.5,0">
@@ -153,7 +153,19 @@
                 </Button.Background>
             </Button>
             <TextBlock x:Name="FolderWasSavedSuccessflly" HorizontalAlignment="Left" Margin="377,433,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="246" Foreground="#FF64F300" FontFamily="Segoe UI Emoji" FontStyle="Italic" FontWeight="Bold" FontStretch="ExtraCondensed" TextDecorations="{x:Null}" FontSize="16"/>
-            <Button Content="Save" HorizontalAlignment="Left" Margin="438,378,0,0" Grid.Row="1" VerticalAlignment="Top" Width="111" Height="32" FontSize="18">
+            <Button Content="Save"
+                    HorizontalAlignment="Left"
+                    Margin="438,378,0,0" 
+                    Grid.Row="1"
+                    VerticalAlignment="Top"
+                    Width="114"
+                    Height="35"
+                    FontSize="20" FontFamily="Rockwell Extra Bold" Foreground="#FFF9C927" BorderBrush="{x:Null}">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF0B1F3C" Offset="0"/>
