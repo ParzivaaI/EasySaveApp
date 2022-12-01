@@ -63,7 +63,7 @@
                     Width="170" 
                     Height="65" 
                     IsCancel="True"
-                    FontFamily="Yu Gothic UI Semibold" BorderBrush="{x:Null}" 
+                    FontFamily="Segoe UI Black" BorderBrush="{x:Null}" 
                     Background="{x:Null}" 
                     Foreground="White" 
                              />
@@ -75,7 +75,7 @@
                     Width="170" 
                     Height="65" 
                     IsCancel="True"
-                    FontFamily="Yu Gothic UI Semibold" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontWeight="Bold" 
+                    FontFamily="Segoe UI Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontWeight="Bold" 
                              />
             <TextBlock HorizontalAlignment="Left" 
                        Height="65" 
