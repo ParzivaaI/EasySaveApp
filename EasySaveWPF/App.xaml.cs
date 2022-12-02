@@ -1,4 +1,3 @@
-<<<<<<<< HEAD:EasySaveWPF/App.xaml.cs
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -34,4 +33,3 @@ namespace EasySaveWPF
     {
     }
 }
->>>>>>>> Encryption:EasySaveWPF/EasySaveWPF/App.xaml.cs
