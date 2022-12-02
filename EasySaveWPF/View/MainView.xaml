@@ -70,7 +70,7 @@
                     Width="170" 
                     Height="65" 
                     IsCancel="True"
-                    FontFamily="Segoe UI Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontWeight="Bold" 
+                    FontFamily="Segoe UI Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click_4" 
                              />
             <TextBlock HorizontalAlignment="Left" 
                        Height="65" 
@@ -82,7 +82,7 @@
                        FontSize="36" 
                        Foreground="White" 
                        FontWeight="Bold"><Run Foreground="#FFE45151" Text="E"/><Run Text="asy"/><Run Foreground="Yellow" Text="S"/><Run Text="ave"/></TextBlock>
-            <TextBox HorizontalAlignment="Left" 
+            <TextBox x:Name="CopyFilePath" HorizontalAlignment="Left" 
                      Height="24" 
                      Margin="124,151,0,0" 
                      Grid.Row="1" 
@@ -104,7 +104,7 @@
                        FontSize="20"
                        IsEnabled="False"
                        />
-            <TextBox HorizontalAlignment="Left" 
+            <TextBox x:Name="DestinationFilePath" HorizontalAlignment="Left" 
                      Height="24" 
                      Margin="124,273,0,0" 
                      Grid.Row="1" 
@@ -132,7 +132,7 @@
                     Height="27"
                     BorderBrush="{x:Null}"
                     Foreground="#FF212438"
-                    FontFamily="Rockwell Extra Bold">
+                    FontFamily="Rockwell Extra Bold" Click="Button_Click_3">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -155,7 +155,7 @@
                     VerticalAlignment="Top"
                     Width="114"
                     Height="35"
-                    FontSize="20" FontFamily="Rockwell Extra Bold" Foreground="#FFF9C927" BorderBrush="{x:Null}">
+                    FontSize="20" FontFamily="Rockwell Extra Bold" Foreground="#FFF9C927" BorderBrush="{x:Null}" Click="Button_Click_5">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
@@ -177,7 +177,7 @@
                     Height="27" 
                     BorderBrush="{x:Null}"
                     Foreground="#FF212438"
-                    FontFamily="Rockwell Extra Bold">
+                    FontFamily="Rockwell Extra Bold" Click="Button_Click_2">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
