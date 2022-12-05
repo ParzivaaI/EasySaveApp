@@ -35,10 +35,10 @@ namespace EasySaveWPF.ViewModel
             CurrentView = MainVM;
 
             Content = new English();
-           
+
             FrenshCommand = new RelayCommand(o =>
             {
-              
+
 
             });
 
