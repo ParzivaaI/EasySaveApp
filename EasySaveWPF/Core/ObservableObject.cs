@@ -9,7 +9,7 @@ using EasySaveWPF.ViewModel;
 
 namespace EasySaveWPF.Core
 {
-    class ObservableObject : INotifyPropertyChanged
+    public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
