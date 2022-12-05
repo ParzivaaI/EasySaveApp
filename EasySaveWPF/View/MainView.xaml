@@ -1,22 +1,12 @@
-<<<<<<< HEAD
-﻿<UserControl
-=======
-<<<<<<< HEAD
 ﻿<UserControl x:Class="EasySaveWPF.View.MainView"
->>>>>>> 0deab1672f0325a0fe7d4ef63d4a45a322571c01
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:EasySaveWPF.View"
-             xmlns:ViewModel="clr-namespace:EasySaveWPF.ViewModel" x:Class="EasySaveWPF.View.MainView"
              mc:Ignorable="d"
              Height="600" Width="920"
              >
-
-    <UserControl.DataContext>
-        <ViewModel:MainViewModel/>
-    </UserControl.DataContext>
 
     <Border Background="#FF2A2651"
             CornerRadius="35">
@@ -143,7 +133,7 @@
                     Foreground="#FF212438"
                     FontFamily="Rockwell Extra Bold" Click="Button_Click_3">
                 <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
+                    <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
                     </Style>
                 </Button.Resources>
@@ -166,7 +156,7 @@
                     Height="35"
                     FontSize="20" FontFamily="Rockwell Extra Bold" Foreground="#FFF9C927" BorderBrush="{x:Null}">
                 <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
+                    <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
@@ -188,7 +178,7 @@
                     Foreground="#FF212438"
                     FontFamily="Rockwell Extra Bold" Click="Button_Click_2">
                 <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
+                    <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
                     </Style>
                 </Button.Resources>
@@ -205,209 +195,4 @@
         </Grid>
 
     </Border>
-<<<<<<< HEAD
 </UserControl>
-=======
-</UserControl>
-=======
-﻿<UserControl x:Class="EasySaveWPF.View.MainView"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:EasySaveWPF.View" xmlns:viewmodel="clr-namespace:EasySaveWPF.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
-             mc:Ignorable="d" 
-             Height="600" Width="920"
-             >
-
-    <Border Background="#FF2A2651"
-            CornerRadius="35">
-        <Grid>
-
-            <Grid.RowDefinitions>
-                <RowDefinition 
-                    Height="75"/>
-
-                <RowDefinition/>
-
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-
-
-
-                <ColumnDefinition/>
-
-            </Grid.ColumnDefinitions>
-
-            <RadioButton 
-                Content="English"
-                Margin="768,10,10,0" 
-                Foreground="White" 
-                FontSize="22" 
-                FontFamily="Yu Gothic UI Semibold" 
-                VerticalAlignment="Center" 
-                Background="White" 
-                Height="65"
-                             
-                             />
-            <RadioButton 
-                Content="Français"
-                Margin="626,10,152,0" 
-                Foreground="White" 
-                FontSize="22" 
-                FontFamily="Yu Gothic UI Semibold" 
-                VerticalAlignment="Center" 
-                Background="White" 
-                Height="65"
-                             
-                             />
-            <Button Content="Differential"
-                    HorizontalAlignment="Left" 
-                    Margin="411,-2,0,12" 
-                    VerticalAlignment="Center" 
-                    FontSize="26" 
-                    Width="170" 
-                    Height="65" 
-                    IsCancel="True"
-                    FontFamily="Segoe UI Black" BorderBrush="{x:Null}" 
-                    Background="{x:Null}" 
-                    Foreground="White" 
-                             />
-            <Button Content="Complete" 
-                    HorizontalAlignment="Left" 
-                    Margin="218,-2,0,12" 
-                    VerticalAlignment="Center" 
-                    FontSize="26" 
-                    Width="170" 
-                    Height="65" 
-                    IsCancel="True"
-                    FontFamily="Segoe UI Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click_4" 
-                             />
-            <TextBlock HorizontalAlignment="Left" 
-                       Height="65" 
-                       Margin="30,10,0,0" 
-                       TextWrapping="Wrap" 
-                       VerticalAlignment="Top" 
-                       Width="188" 
-                       FontFamily="Cooper Black"
-                       FontSize="36" 
-                       Foreground="White" 
-                       FontWeight="Bold"><Run Foreground="#FFE45151" Text="E"/><Run Text="asy"/><Run Foreground="Yellow" Text="S"/><Run Text="ave"/></TextBlock>
-            <TextBox x:Name="CopyFilePath" HorizontalAlignment="Left" 
-                     Height="24" 
-                     Margin="124,151,0,0" 
-                     Grid.Row="1" 
-                     TextWrapping="Wrap"
-                     VerticalAlignment="Top" 
-                     Width="499" 
-                     TextChanged="TextBox_TextChanged"
-                     />
-            <TextBlock HorizontalAlignment="Left"
-                       Margin="124,113,0,0" 
-                       Grid.Row="1"
-                       TextWrapping="Wrap"
-                       Text="Add the Folder source :"
-                       VerticalAlignment="Top" 
-                       Height="33" 
-                       Width="284"
-                       Foreground="White" 
-                       FontFamily="Yu Gothic UI Semibold"
-                       FontSize="20"
-                       IsEnabled="False"
-                       />
-            <TextBox x:Name="DestinationFilePath" HorizontalAlignment="Left" 
-                     Height="24" 
-                     Margin="124,273,0,0" 
-                     Grid.Row="1" 
-                     TextWrapping="Wrap"
-                     VerticalAlignment="Top" 
-                     Width="499"
-                     />
-            <TextBlock HorizontalAlignment="Left"
-                       Margin="124,235,0,0"
-                       Grid.Row="1" 
-                       TextWrapping="Wrap" 
-                       VerticalAlignment="Top"
-                       Height="33"
-                       Width="284" 
-                       Foreground="White"
-                       FontFamily="Yu Gothic UI Semibold"
-                       FontSize="20"
-                       IsEnabled="False"><Run Text="Add the Folder"/><Run Text=" target"/><Run Text=" :"/></TextBlock>
-            <Button Content="Browse" 
-                    HorizontalAlignment="Left" 
-                    Margin="655,270,0,0" 
-                    Grid.Row="1" 
-                    VerticalAlignment="Top"
-                    Width="76" 
-                    Height="27"
-                    BorderBrush="{x:Null}"
-                    Foreground="#FF212438"
-                    FontFamily="Rockwell Extra Bold" Click="Button_Click_3">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="7"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Background>
-                    <LinearGradientBrush 
-                        EndPoint="0.5,1" 
-                        StartPoint="0.5,0">
-                        <GradientStop Color="#FF6E7827" Offset="0"/>
-                        <GradientStop Color="White" Offset="0.722"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-            <TextBlock x:Name="FolderWasSavedSuccessflly" HorizontalAlignment="Left" Margin="377,433,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="246" Foreground="#FF64F300" FontFamily="Segoe UI Emoji" FontStyle="Italic" FontWeight="Bold" FontStretch="ExtraCondensed" TextDecorations="{x:Null}" FontSize="16"/>
-            <Button Content="Save"
-                    HorizontalAlignment="Left"
-                    Margin="438,378,0,0" 
-                    Grid.Row="1"
-                    VerticalAlignment="Top"
-                    Width="114"
-                    Height="35"
-                    FontSize="20" FontFamily="Rockwell Extra Bold" Foreground="#FFF9C927" BorderBrush="{x:Null}" Click="Button_Click_5">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FF0B1F3C" Offset="0"/>
-                        <GradientStop Color="#FF305F99" Offset="0.704"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-            <Button Content="Browse"
-                    HorizontalAlignment="Left"
-                    Margin="655,151,0,0" 
-                    Grid.Row="1" 
-                    VerticalAlignment="Top"
-                    Width="76"
-                    Height="27" 
-                    BorderBrush="{x:Null}"
-                    Foreground="#FF212438"
-                    FontFamily="Rockwell Extra Bold" Click="Button_Click_2">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="7"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Background>
-                    <LinearGradientBrush
-                        EndPoint="0.5,1" 
-                        StartPoint="0.5,0">
-                        <GradientStop Color="#FF6E7827" Offset="0"/>
-                        <GradientStop Color="White" Offset="0.722"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-
-        </Grid>
-
-    </Border>
-</UserControl>
->>>>>>> Interface
->>>>>>> 0deab1672f0325a0fe7d4ef63d4a45a322571c01

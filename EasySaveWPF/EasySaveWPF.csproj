@@ -71,11 +71,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Core\ObservableObject.cs" />
-    <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="Model\BlackList.cs" />
     <Compile Include="Model\FileEditing.cs" />
     <Compile Include="Model\Logger.cs" />
-    <Compile Include="Model\Person.cs" />
     <Compile Include="Model\StateFunction.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
@@ -128,6 +126,4 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-<<<<<<< HEAD
 </Project>
->>>>>>> 0deab1672f0325a0fe7d4ef63d4a45a322571c01

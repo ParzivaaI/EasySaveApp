@@ -4,7 +4,6 @@
              xmlns:local="clr-namespace:EasySaveWPF"
              xmlns:viewModel="clr-namespace:EasySaveWPF.ViewModel"
              xmlns:view="clr-namespace:EasySaveWPF.View" 
-             xmlns:model="clr-namespace:EasySaveWPF.Model" 
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         
@@ -12,9 +11,6 @@
 
             <DataTemplate DataType="{x:Type viewModel:ViewModel}">
                 <view:MainView/>
-            </DataTemplate >
-            <DataTemplate DataType="{x:Type model:Person}">
-               
             </DataTemplate >
 
 
