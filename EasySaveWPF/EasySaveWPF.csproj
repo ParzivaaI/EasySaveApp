@@ -75,7 +75,6 @@
     <Compile Include="Model\FileEditing.cs" />
     <Compile Include="Model\Logger.cs" />
     <Compile Include="Model\model.cs" />
-    <Compile Include="Model\Program.cs" />
     <Compile Include="Model\StateFunction.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
