@@ -50,7 +50,7 @@
                 Height="65"
                              
                              />
-            <Button Content="Display LOG"
+            <Button Content="Differential"
                     HorizontalAlignment="Left" 
                     Margin="411,-2,0,12" 
                     VerticalAlignment="Center" 
@@ -62,7 +62,7 @@
                     Background="{x:Null}" 
                     Foreground="White" 
                              />
-            <Button Content="SAVE" 
+            <Button Content="Complete" 
                     HorizontalAlignment="Left" 
                     Margin="218,-2,0,12" 
                     VerticalAlignment="Center" 

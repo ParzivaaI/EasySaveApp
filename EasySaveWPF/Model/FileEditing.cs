@@ -12,7 +12,7 @@ namespace EasySaveWPF.Model
         string pasteDirectory;
         int leftToTransfer;
         private Model model;
-        string[] blacklistedApps = Model.GetBlackList();
+/*        string[] blacklistedApps = Model.GetBlackList();*/
 
 
         public void Variables(string name, string copyDirectory, string pasteDirectory, int leftToTransfer)

@@ -8,9 +8,6 @@
         xmlns:local="clr-namespace:EasySaveWPF"
         mc:Ignorable="d" 
         Height="600" Width="920"
-        WindowStyle="None" 
-        AllowsTransparency="True" 
-        Background="Transparent"
         ResizeMode="NoResize">
 
     <Window.DataContext>

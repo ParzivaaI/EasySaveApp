@@ -4,17 +4,22 @@
 winexe
 C#
 .cs
-C:\Users\33767\source\repos\EasySaveApp\EasySaveWPF\obj\Debug\
+C:\Users\33767\Desktop\EasySaveAppp v 3\EasySaveWPF\obj\Debug\
 EasySaveWPF
 none
 false
 DEBUG;TRACE
-C:\Users\33767\source\repos\EasySaveApp\EasySaveWPF\App.xaml
+C:\Users\33767\Desktop\EasySaveAppp v 3\EasySaveWPF\App.xaml
 2702257237
 
+<<<<<<< HEAD
 15-1710384068
 18-792555758
+=======
+14-1385119068
+181054394094
+>>>>>>> a0ab7834ad439e463006998ad5ed4e0f03626c04
 MainWindow.xaml;View\MainView.xaml;
 
-True
+False
 
