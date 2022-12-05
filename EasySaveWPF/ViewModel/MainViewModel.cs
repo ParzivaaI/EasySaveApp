@@ -13,9 +13,9 @@ namespace EasySaveWPF.ViewModel
     {
         public ViewModel MainVM { get; set; }
 
-        private Object _currentView;
+        private object _currentView;
         public object CurrentView
-            
+
            {
             get { return _currentView; }
             set {

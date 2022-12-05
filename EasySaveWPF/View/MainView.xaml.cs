@@ -13,21 +13,6 @@ namespace EasySaveWPF.View
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Button_Click_2(object sender, RoutedEventArgs e) //bouton chemin copie
         {
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
@@ -39,7 +24,7 @@ namespace EasySaveWPF.View
             }
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e) //bouton  chemin coller   
+        private void Button_Click_3(object sender, RoutedEventArgs e) //bouton  chemin coller
         {
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
             dialog.IsFolderPicker = true;
@@ -48,16 +33,6 @@ namespace EasySaveWPF.View
             {
                 DestinationFilePath.Text = dialog.FileName; //Affichage dans la fenètre principale
             }
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_5(object sender, RoutedEventArgs e) //bouton save
-        {
-
         }
     }
 }
