@@ -29,7 +29,7 @@ namespace EasySaveWPF.Model
                     string saveChoice = Console.ReadLine();
                     int sizeofFiles = Directory.GetFiles(copyPath).Length;
                     ObjfileEditing.Variables(directoryName, copyPath, pathPaste, sizeofFiles);
-                    if (saveChoice == "1")
+            /*        if (saveChoice == "1")
                     {
                         ObjfileEditing.DiffSave();
                         Console.WriteLine("Differential save completed / Sauvegarde différentiel terminé.");
@@ -54,21 +54,21 @@ namespace EasySaveWPF.Model
                 default:
                     Console.WriteLine("Error. Please enter a valid choice / Erreur. Veuillez entrer un choix valide.\n");
                     Program.Choice();
-                    break;
+                    break;*/
             }
         }
-        public static string[] GetBlackList()//Fonction pour obtenir la liste noire des programmes
-        {
-            using (StreamReader blacklistreader = new StreamReader(@"..\..\..\Ressources\BusinessSoftwareBlacklist.json"))
+    /*        public static string[] GetBlackList()//Fonction pour obtenir la liste noire des programmes
             {
-                BlackList[] theblacklist;
-                string[] blacklist_array;
-                string tojson = blacklistreader.ReadToEnd();
-                List<BlackList> items = JsonConvert.DeserializeObject<List<BlackList>>(tojson);
-                theblacklist = items.ToArray();
-                blacklist_array = theblacklist[0].Black_list.Split(',');
-                return blacklist_array;//retour des noms des programmes dans la blacklist
-            }
-        }
-    }
+                using (StreamReader blacklistreader = new StreamReader(@"..\..\..\Ressources\BusinessSoftwareBlacklist.json"))
+                {
+                    BlackList[] theblacklist;
+                    string[] blacklist_array;
+                    string tojson = blacklistreader.ReadToEnd();
+                    List<BlackList> items = JsonConvert.DeserializeObject<List<BlackList>>(tojson);
+                    theblacklist = items.ToArray();
+                    blacklist_array = theblacklist[0].Black_list.Split(',');
+                    return blacklist_array;//retour des noms des programmes dans la blacklist
+
+            }}*/
 }
+
