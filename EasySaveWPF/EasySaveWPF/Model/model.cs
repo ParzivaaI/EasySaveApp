@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:EasySaveWPF/EasySaveWPF/Model/model.cs
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
@@ -78,3 +79,22 @@ namespace EasySaveWPF.Model
         }
     }
 }
+=======
+﻿using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EasySaveWPF.View;
+using System.Windows.Data;
+
+namespace EasySaveWPF.Model
+{
+    class Model
+    {
+
+    }
+}
+
+>>>>>>> Stashed changes:EasySaveWPF/Model/model.cs
