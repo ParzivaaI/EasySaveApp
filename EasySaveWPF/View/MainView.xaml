@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:EasySaveWPF.View"
+             xmlns:local="clr-namespace:EasySaveWPF.View" xmlns:viewmodel="clr-namespace:EasySaveWPF.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
              mc:Ignorable="d" 
              Height="600" Width="920"
              >
@@ -122,7 +122,7 @@
                        Foreground="White"
                        FontFamily="Yu Gothic UI Semibold"
                        FontSize="20"
-                       IsEnabled="False"><Run Text="Add the Folder"/><Run Text=" destination "/><Run Text=":"/></TextBlock>
+                       IsEnabled="False"><Run Text="Add the Folder"/><Run Text=" target"/><Run Text=" :"/></TextBlock>
             <Button Content="Browse" 
                     HorizontalAlignment="Left" 
                     Margin="655,270,0,0" 
