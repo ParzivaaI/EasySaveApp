@@ -24,7 +24,7 @@ namespace EasySaveAppV0
             }
             else if (ChoiceLanguage == "2")
             {
-               Console.WriteLine("Easysave - faites votre choix\r\n 1.Créer une sauvegarde \r\n 2.Lire les Logs \r\n 3.Lire les States");
+               Console.WriteLine("Easysave - faites votre choix\r\n 1.Créer une sauvegarde \r\n 2.Ouvrir les Logs \r\n 3.Ouvrir les States");
             }
             string menuChoice = Console.ReadLine();
             switch (menuChoice)
