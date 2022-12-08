@@ -30,5 +30,10 @@ namespace EasySaveWPF.ViewModel
             CurrentView = MainVM;
         }
 
+<<<<<<< HEAD
+=======
+        }
+
+>>>>>>> Interface
     }
 }
