@@ -123,3 +123,12 @@ C:\Users\33767\Desktop\EasySaveAppp v 3\EasySaveWPF\obj\Debug\EasySaveWPF.Proper
 C:\Users\33767\Desktop\EasySaveAppp v 3\EasySaveWPF\obj\Debug\EasySaveWPF.csproj.GenerateResource.cache
 C:\Users\33767\Desktop\EasySaveAppp v 3\EasySaveWPF\obj\Debug\EasySaveWPF.csproj.CoreCompileInputs.cache
 C:\Users\33767\Desktop\EasySaveAppp v 3\EasySaveWPF\obj\Debug\EasySaveWPF.csproj.CopyComplete
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\EasySaveWPF.csproj.AssemblyReference.cache
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\MainWindow.g.cs
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\App.g.cs
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\EasySaveWPF_MarkupCompile.cache
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\EasySaveWPF_MarkupCompile.lref
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\EasySaveWPF.exe
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\EasySaveWPF.pdb
+C:\Users\33767\Desktop\Easyapp\EasySaveWPF\obj\Debug\View\MainView.g.cs
