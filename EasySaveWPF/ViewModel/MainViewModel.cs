@@ -12,11 +12,10 @@ namespace EasySaveWPF.ViewModel
     class MainViewModel : ObservableObject
     {
         public ViewModel MainVM { get; set; }
-
-        private Object _currentView;
+        public RelayCommand SaveButton { get; set; }
+        private object _currentView;
         public object CurrentView
-            
-           {
+        {
             get { return _currentView; }
             set {
                 _currentView = value;
@@ -27,7 +26,9 @@ namespace EasySaveWPF.ViewModel
         public MainViewModel()
         {
             MainVM = new ViewModel();
+            SaveButton = new RelayCommand(obj => { System.Windows.Application.Current.Shutdown()});
             CurrentView = MainVM;
         }
+
     }
 }
