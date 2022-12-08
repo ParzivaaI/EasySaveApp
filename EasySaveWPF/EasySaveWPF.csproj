@@ -77,7 +77,7 @@
     <Compile Include="Model\Frensh.cs" />
     <Compile Include="Model\Langues.cs" />
     <Compile Include="Model\Logger.cs" />
-    <Compile Include="Model\model.cs" />
+    <Compile Include="Model\Model.cs" />
     <Compile Include="Model\StateFunction.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="Core\RelayCommand.cs" />
