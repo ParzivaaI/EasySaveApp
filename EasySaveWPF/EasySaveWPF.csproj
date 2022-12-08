@@ -73,6 +73,9 @@
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="Model\BlackList.cs" />
+    <Compile Include="Model\English.cs" />
+    <Compile Include="Model\French.cs" />
+    <Compile Include="Model\Langues.cs" />
     <Compile Include="Model\Save.cs" />
     <Compile Include="Model\Logger.cs" />
     <Compile Include="Model\StateFunction.cs" />
