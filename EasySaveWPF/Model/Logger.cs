@@ -4,8 +4,8 @@ using System.IO;
    namespace EasySaveWPF.Model
 
 {
-    public class Logger 
-{
+    public class Logger
+    {
 
         public string FName { get; set; }
         public string FileSource { get; set; }
