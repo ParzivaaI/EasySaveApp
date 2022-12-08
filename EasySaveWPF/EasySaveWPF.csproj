@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.WindowsAPICodePack-Core.1.1.0.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+      <HintPath>packages\Microsoft.WindowsAPICodePack-Core.1.1.0.0\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
@@ -72,10 +72,15 @@
     </ApplicationDefinition>
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Model\BlackList.cs" />
+    <Compile Include="Model\English.cs" />
     <Compile Include="Model\FileEditing.cs" />
+    <Compile Include="Model\Frensh.cs" />
+    <Compile Include="Model\Langues.cs" />
     <Compile Include="Model\Logger.cs" />
+    <Compile Include="Model\model.cs" />
     <Compile Include="Model\StateFunction.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
     <Compile Include="View\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
