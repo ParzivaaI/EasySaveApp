@@ -7,14 +7,19 @@ using System.Diagnostics;
 namespace EasySaveWPF.Model
 {
     public class FileEditing
-    {   
+    {
         string name;
         string copyDirectory;
         string pasteDirectory;
         int leftToTransfer;
+<<<<<<< HEAD
         string saveCompleted;
         public static int TimeCounter = 0;
         public static Timer timer = new Timer(500);
+=======
+        private Model model;
+        string[] blacklistedApps = Model.GetBlackList();
+>>>>>>> Interface
 
         public int LeftToTransfer { get => leftToTransfer; set => leftToTransfer = value; }
         public string PasteDirectory { get => pasteDirectory; set => pasteDirectory = value; }
@@ -52,8 +57,8 @@ namespace EasySaveWPF.Model
             //créer la state
             StateFunction ObjStateFunction = new StateFunction();
             //créer les dossiers
-            foreach (string dirPath in Directory.GetDirectories(copyDirectory, "*",SearchOption.AllDirectories))
-            { 
+            foreach (string dirPath in Directory.GetDirectories(copyDirectory, "*", SearchOption.AllDirectories))
+            {
                 Directory.CreateDirectory(dirPath.Replace(copyDirectory, pasteDirectory)); //créer le dossier dans la nouvelle sauvegarde pour chaque dossier existant
             }
             //Copying all the files, replace if same name
@@ -80,7 +85,7 @@ namespace EasySaveWPF.Model
             }
             var logger = new Logger
             {
-                FName = name ,
+                FName = name,
                 FileSource = copyDirectory,
                 FileTarget = pasteDirectory,
                 FileSize = totalFileSize,
@@ -103,11 +108,15 @@ namespace EasySaveWPF.Model
             StateFunction ObjStateFunction = new StateFunction();
             //créer les dossiers
             foreach (string dirPath in Directory.GetDirectories(copyDirectory, "*", SearchOption.AllDirectories))
+<<<<<<< HEAD
             { 
+=======
+>>>>>>> Interface
                 if (Directory.GetLastAccessTime(dirPath) > Directory.GetLastAccessTime(copyDirectory))
                 {
                     Directory.CreateDirectory(dirPath.Replace(copyDirectory, pasteDirectory));
                 }
+<<<<<<< HEAD
             }
             //Copie les fichiers, remplace si nom identique
             foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*", SearchOption.AllDirectories))
@@ -119,12 +128,24 @@ namespace EasySaveWPF.Model
                     LeftToTransfer--;
                     totalFileSize -= newPath.Length;
                     if (LeftToTransfer >= 0)
+=======
+            //Copie les fichiers, remplace si nom identique
+            foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*", SearchOption.AllDirectories))
+                if (File.GetLastAccessTime(newPath) > File.GetLastAccessTime(newPath.Replace(copyDirectory, pasteDirectory)))
+                {
+                    bool stateIsActive;
+                    File.Copy(newPath, newPath.Replace(copyDirectory, pasteDirectory), true);
+                    leftToTransfer--;
+                    totalFileSize -= newPath.Length;
+                    if (leftToTransfer >= 0)
+>>>>>>> Interface
                     {
                         stateIsActive = true;
                     }
                     else
                     {
                         stateIsActive = false;
+<<<<<<< HEAD
                 }
                     ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive, LeftToTransfer, totalFileSize,saveCompleted);
                 }
@@ -140,6 +161,22 @@ namespace EasySaveWPF.Model
         };
         string jsonString = JsonConvert.SerializeObject(logger);
         logger.SaveLog(jsonString);
+=======
+                    }
+                    ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive, leftToTransfer, totalFileSize);
+                }
+            var date = DateTime.Now;
+            var logger = new Logger
+            {
+                FName = name,
+                FileSource = copyDirectory,
+                FileTarget = pasteDirectory,
+                FileSize = totalFileSize,
+                Time = date
+            };
+            string jsonString = JsonConvert.SerializeObject(logger);
+            logger.SaveLog(jsonString);
+>>>>>>> Interface
         }
 
         public static bool IsBlacklisted(string[] blacklist)
