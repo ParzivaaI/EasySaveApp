@@ -2,24 +2,19 @@ using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Timers;
-using System.Diagnostics;
+using System.Text;
 
 namespace EasySaveWPF.Model
 {
-    public class FileEditing
+    public class Save
     {
         string name;
         string copyDirectory;
         string pasteDirectory;
         int leftToTransfer;
-<<<<<<< HEAD
         string saveCompleted;
         public static int TimeCounter = 0;
         public static Timer timer = new Timer(500);
-=======
-        private Model model;
-        string[] blacklistedApps = Model.GetBlackList();
->>>>>>> Interface
 
         public int LeftToTransfer { get => leftToTransfer; set => leftToTransfer = value; }
         public string PasteDirectory { get => pasteDirectory; set => pasteDirectory = value; }
@@ -29,11 +24,11 @@ namespace EasySaveWPF.Model
 
         /*string[] blacklistedApps = Model.GetBlackList();*/
 
-        public FileEditing()
+        public Save()
         {
-            Name = "Save";
+            Name = "EasySaved";
             CopyDirectory = @"C:\";
-            PasteDirectory = @"E:\";
+            PasteDirectory = @"C:\Program Files";
             SaveCompleted = "Complete";
         }
         public void Variables(string Name, string CopyDirectory, string PasteDirectory, int LeftToTransfer)
@@ -97,6 +92,7 @@ namespace EasySaveWPF.Model
         }
         public void DiffSave()
         {
+            SaveCompleted = "Differential";
             long totalFileSize = 0;
             //Demarrer le timer
             timer.Elapsed += SaveTimer;
@@ -105,18 +101,15 @@ namespace EasySaveWPF.Model
             timer.Start();
             TimeCounter++;
             pasteDirectory += @"\" + name;
+            //Ajout du nom au path pour créer le dossier de sauvegarde
             StateFunction ObjStateFunction = new StateFunction();
             //créer les dossiers
             foreach (string dirPath in Directory.GetDirectories(copyDirectory, "*", SearchOption.AllDirectories))
-<<<<<<< HEAD
-            { 
-=======
->>>>>>> Interface
+            {
                 if (Directory.GetLastAccessTime(dirPath) > Directory.GetLastAccessTime(copyDirectory))
                 {
                     Directory.CreateDirectory(dirPath.Replace(copyDirectory, pasteDirectory));
                 }
-<<<<<<< HEAD
             }
             //Copie les fichiers, remplace si nom identique
             foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*", SearchOption.AllDirectories))
@@ -128,24 +121,12 @@ namespace EasySaveWPF.Model
                     LeftToTransfer--;
                     totalFileSize -= newPath.Length;
                     if (LeftToTransfer >= 0)
-=======
-            //Copie les fichiers, remplace si nom identique
-            foreach (string newPath in Directory.GetFiles(copyDirectory, "*.*", SearchOption.AllDirectories))
-                if (File.GetLastAccessTime(newPath) > File.GetLastAccessTime(newPath.Replace(copyDirectory, pasteDirectory)))
-                {
-                    bool stateIsActive;
-                    File.Copy(newPath, newPath.Replace(copyDirectory, pasteDirectory), true);
-                    leftToTransfer--;
-                    totalFileSize -= newPath.Length;
-                    if (leftToTransfer >= 0)
->>>>>>> Interface
                     {
                         stateIsActive = true;
                     }
                     else
                     {
                         stateIsActive = false;
-<<<<<<< HEAD
                 }
                     ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive, LeftToTransfer, totalFileSize,saveCompleted);
                 }
@@ -161,25 +142,9 @@ namespace EasySaveWPF.Model
         };
         string jsonString = JsonConvert.SerializeObject(logger);
         logger.SaveLog(jsonString);
-=======
-                    }
-                    ObjStateFunction.StateCreate(copyDirectory, pasteDirectory, name, stateIsActive, leftToTransfer, totalFileSize);
-                }
-            var date = DateTime.Now;
-            var logger = new Logger
-            {
-                FName = name,
-                FileSource = copyDirectory,
-                FileTarget = pasteDirectory,
-                FileSize = totalFileSize,
-                Time = date
-            };
-            string jsonString = JsonConvert.SerializeObject(logger);
-            logger.SaveLog(jsonString);
->>>>>>> Interface
         }
 
-        public static bool IsBlacklisted(string[] blacklist)
+/*        public static bool IsBlacklisted(string[] blacklist)
         {
             foreach (string processlist in blacklist)
             {
@@ -189,11 +154,35 @@ namespace EasySaveWPF.Model
                 }
             }
             return false;
-        }
+        }*/
         void SaveTimer(object sender, ElapsedEventArgs e)
         {
             TimeCounter++;
         }
+        public string EncryptDecrypt(string szPlainText, int clehash)
+        {
+            StringBuilder szInputStringBuild = new StringBuilder(szPlainText);
+            StringBuilder szOutStringBuild = new StringBuilder(szPlainText.Length);
+            char Textch;
+            for (int iCount = 0; iCount < szPlainText.Length; iCount++)
+            {
+                Textch = szInputStringBuild[iCount];
+                Textch = (char)(Textch ^ clehash);
+                szOutStringBuild.Append(Textch);
+            }
+            return szOutStringBuild.ToString();
+        }
+/*        public void Encrypt(string sourceDir, string targetDir)//Fonction de cryptage
+        {
+            using (Process process = new Process())//Création du process
+            {
+                process.StartInfo.FileName = @"..\..\..\Ressources\CryptoSoft\CryptoSoft.exe"; //Calls the process that is CryptoSoft
+                process.StartInfo.Arguments = String.Format("\"{0}\"", sourceDir) + " " + String.Format("\"{0}\"", targetDir); //Preparation of variables for the process.
+                process.Start(); //Launching the process
+                process.Close();
 
+            }
+
+        }*/
     }
 }

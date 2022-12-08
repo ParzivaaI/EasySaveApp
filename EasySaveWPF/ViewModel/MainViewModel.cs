@@ -26,14 +26,8 @@ namespace EasySaveWPF.ViewModel
         public MainViewModel()
         {
             MainVM = new ViewModel();
-            SaveButton = new RelayCommand(obj => { System.Windows.Application.Current.Shutdown(); });
+            SaveButton = new RelayCommand(obj => { System.Windows.Application.Current.Shutdown();});
             CurrentView = MainVM;
         }
-
-<<<<<<< HEAD
-=======
-        }
-
->>>>>>> Interface
     }
 }
