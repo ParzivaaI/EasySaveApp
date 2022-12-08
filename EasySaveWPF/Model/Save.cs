@@ -2,11 +2,11 @@ using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Timers;
-using System.Diagnostics;
+using System.Text;
 
 namespace EasySaveWPF.Model
 {
-    public class FileEditing
+    public class Save
     {   
         string name;
         string copyDirectory;
@@ -24,11 +24,11 @@ namespace EasySaveWPF.Model
 
         /*string[] blacklistedApps = Model.GetBlackList();*/
 
-        public FileEditing()
+        public Save()
         {
-            Name = "Save";
+            Name = "EasySaved";
             CopyDirectory = @"C:\";
-            PasteDirectory = @"E:\";
+            PasteDirectory = @"C:\Program Files";
             SaveCompleted = "Complete";
         }
         public void Variables(string Name, string CopyDirectory, string PasteDirectory, int LeftToTransfer)
@@ -92,6 +92,7 @@ namespace EasySaveWPF.Model
         }
         public void DiffSave()
         {
+            SaveCompleted = "Differential";
             long totalFileSize = 0;
             //Demarrer le timer
             timer.Elapsed += SaveTimer;
@@ -100,6 +101,7 @@ namespace EasySaveWPF.Model
             timer.Start();
             TimeCounter++;
             pasteDirectory += @"\" + name;
+            //Ajout du nom au path pour créer le dossier de sauvegarde
             StateFunction ObjStateFunction = new StateFunction();
             //créer les dossiers
             foreach (string dirPath in Directory.GetDirectories(copyDirectory, "*", SearchOption.AllDirectories))
@@ -142,7 +144,7 @@ namespace EasySaveWPF.Model
         logger.SaveLog(jsonString);
         }
 
-        public static bool IsBlacklisted(string[] blacklist)
+/*        public static bool IsBlacklisted(string[] blacklist)
         {
             foreach (string processlist in blacklist)
             {
@@ -152,11 +154,35 @@ namespace EasySaveWPF.Model
                 }
             }
             return false;
-        }
+        }*/
         void SaveTimer(object sender, ElapsedEventArgs e)
         {
             TimeCounter++;
         }
+        public string EncryptDecrypt(string szPlainText, int clehash)
+        {
+            StringBuilder szInputStringBuild = new StringBuilder(szPlainText);
+            StringBuilder szOutStringBuild = new StringBuilder(szPlainText.Length);
+            char Textch;
+            for (int iCount = 0; iCount < szPlainText.Length; iCount++)
+            {
+                Textch = szInputStringBuild[iCount];
+                Textch = (char)(Textch ^ clehash);
+                szOutStringBuild.Append(Textch);
+            }
+            return szOutStringBuild.ToString();
+        }
+/*        public void Encrypt(string sourceDir, string targetDir)//Fonction de cryptage
+        {
+            using (Process process = new Process())//Création du process
+            {
+                process.StartInfo.FileName = @"..\..\..\Ressources\CryptoSoft\CryptoSoft.exe"; //Calls the process that is CryptoSoft
+                process.StartInfo.Arguments = String.Format("\"{0}\"", sourceDir) + " " + String.Format("\"{0}\"", targetDir); //Preparation of variables for the process.
+                process.Start(); //Launching the process
+                process.Close();
 
+            }
+
+        }*/
     }
 }
