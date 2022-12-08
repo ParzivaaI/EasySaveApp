@@ -192,6 +192,27 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
+            <TextBox HorizontalAlignment="Left"
+                     Height="26" Margin="124,67,0,0" 
+                     Grid.Row="1" 
+                     TextWrapping="Wrap" 
+                     Text="" 
+                     VerticalAlignment="Top"
+                     Width="499" 
+                     TextChanged="TextBox_TextChanged_1"
+                     />
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="124,29,0,0" 
+                       Grid.Row="1" 
+                       TextWrapping="Wrap" 
+                       Text="Entre The Save Name :" 
+                       VerticalAlignment="Top" 
+                       Height="33" 
+                       Width="275" 
+                       FontFamily="Yu Gothic UI Semibold"
+                       Foreground="White"
+                       FontSize="20"
+                       />
 
         </Grid>
 
