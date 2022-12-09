@@ -72,6 +72,10 @@
     </ApplicationDefinition>
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="CryptoSoft\CryptoSoft\ConfigFileJson.cs" />
+    <Compile Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.AssemblyInfo.cs" />
+    <Compile Include="CryptoSoft\CryptoSoft\Program.cs" />
     <Compile Include="Model\BlackList.cs" />
     <Compile Include="Model\Save.cs" />
     <Compile Include="Model\Logger.cs" />
@@ -117,6 +121,22 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\CryptoSoft.deps.json" />
+    <None Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\CryptoSoft.runtimeconfig.dev.json" />
+    <None Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\CryptoSoft.runtimeconfig.json" />
+    <None Include="CryptoSoft\CryptoSoft\CryptoSoft.csproj" />
+    <None Include="CryptoSoft\CryptoSoft\obj\CryptoSoft.csproj.nuget.dgspec.json" />
+    <None Include="CryptoSoft\CryptoSoft\obj\CryptoSoft.csproj.nuget.g.props" />
+    <None Include="CryptoSoft\CryptoSoft\obj\CryptoSoft.csproj.nuget.g.targets" />
+    <None Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.AssemblyInfoInputs.cache" />
+    <None Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.assets.cache" />
+    <None Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.csproj.AssemblyReference.cache" />
+    <None Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.csproj.CopyComplete" />
+    <None Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.csproj.CoreCompileInputs.cache" />
+    <None Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.genruntimeconfig.cache" />
+    <None Include="CryptoSoft\CryptoSoft\obj\project.assets.json" />
+    <None Include="CryptoSoft\CryptoSoft\obj\project.nuget.cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,6 +146,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="CryptoSoft\CryptoSoft.sln" />
+    <Resource Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\Config\cryptoKey.txt" />
+    <Content Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\CryptoSoft.dll" />
+    <Content Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\CryptoSoft.exe" />
+    <Content Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\CryptoSoft.pdb" />
+    <Content Include="CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll" />
+    <Content Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\apphost.exe" />
+    <Resource Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.csproj.FileListAbsolute.txt" />
+    <Content Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.dll" />
+    <Content Include="CryptoSoft\CryptoSoft\obj\Debug\netcoreapp3.1\CryptoSoft.pdb" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
