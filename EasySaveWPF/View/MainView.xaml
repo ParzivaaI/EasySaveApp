@@ -48,6 +48,7 @@
                 VerticalAlignment="Center"
                 Background="White"
                 Height="65"
+                
 
                              />
             <Button Content="Differential"
@@ -70,6 +71,7 @@
                     Width="170"
                     Height="65"
                     IsCancel="True"
+                    Command="{Binding CompleteSaveCommand}"
                     FontFamily="Segoe UI Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontWeight="Bold"
                              />
             <TextBlock HorizontalAlignment="Left"
@@ -83,6 +85,7 @@
                        Foreground="White"
                        FontWeight="Bold"><Run Foreground="#FFE45151" Text="E"/><Run Text="asy"/><Run Foreground="Yellow" Text="S"/><Run Text="ave"/></TextBlock>
             <TextBox x:Name="CopyFilePath" HorizontalAlignment="Left"
+                     Text="{Binding PathSource, Mode=TwoWay}"
                      Height="24"
                      Margin="124,151,0,0"
                      Grid.Row="1"
@@ -131,7 +134,8 @@
                     Height="27"
                     BorderBrush="{x:Null}"
                     Foreground="#FF212438"
-                    FontFamily="Rockwell Extra Bold" Click="Button_Click_3">
+                    Command="{Binding BrowseDestinationPathButton}"
+                    FontFamily="Rockwell Extra Bold" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -154,6 +158,7 @@
                     VerticalAlignment="Top"
                     Width="114"
                     Height="35"
+                    Command="{Binding SaveButton}"
                     FontSize="20" FontFamily="Rockwell Extra Bold" Foreground="#FFF9C927" BorderBrush="{x:Null}">
                 <Button.Resources>
                     <Style TargetType="Border">
@@ -176,7 +181,8 @@
                     Height="27"
                     BorderBrush="{x:Null}"
                     Foreground="#FF212438"
-                    FontFamily="Rockwell Extra Bold" Click="Button_Click_2">
+                    Command="{Binding BrowseSourcePathButton }"
+                    FontFamily="Rockwell Extra Bold" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>

@@ -2,6 +2,7 @@
 using System.IO;
 using Newtonsoft.Json;
 
+
 namespace EasySaveWPF.Model
 { 
     public class BlackList

@@ -7,12 +7,16 @@ using EasySaveWPF.Core;
 using EasySaveWPF.ViewModel;
 using EasySaveWPF.View;
 
+
 namespace EasySaveWPF.ViewModel
 {
     class MainViewModel : ObservableObject
     {
+        
         public ViewModel MainVM { get; set; }
-        public RelayCommand SaveButton { get; set; }
+    
+       
+
         private object _currentView;
         public object CurrentView
         {
@@ -26,9 +30,13 @@ namespace EasySaveWPF.ViewModel
         public MainViewModel()
         {
             MainVM = new ViewModel();
-            SaveButton = new RelayCommand(obj => { System.Windows.Application.Current.Shutdown()});
+
             CurrentView = MainVM;
         }
+
+     
+
+
 
     }
 }

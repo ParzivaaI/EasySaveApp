@@ -4,6 +4,8 @@ using System.IO;
 using System.Timers;
 using System.Diagnostics;
 
+
+
 namespace EasySaveWPF.Model
 {
     public class FileEditing
@@ -20,7 +22,7 @@ namespace EasySaveWPF.Model
         public string PasteDirectory { get => pasteDirectory; set => pasteDirectory = value; }
         public string Name { get => name; set => name = value; }
         public string CopyDirectory { get => copyDirectory; set => copyDirectory = value; }
-        public string SaveCompleted { get => SaveCompleted; set => SaveCompleted = value; }
+        public string SaveCompleted { get => saveCompleted; set => saveCompleted = value; }
 
         /*string[] blacklistedApps = Model.GetBlackList();*/
 
@@ -40,6 +42,7 @@ namespace EasySaveWPF.Model
         }
         public void CompleteSave()
         {
+           
             //Demarrer le timer
             timer.Elapsed += SaveTimer;
             timer.Enabled = true;
