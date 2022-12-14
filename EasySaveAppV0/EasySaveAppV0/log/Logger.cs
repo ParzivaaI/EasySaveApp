@@ -19,7 +19,7 @@ using EasySaveAppV0.Search;
         public DateTimeOffset Time { get; set; }
 
         //define log 
-        public string CurrentDirectory
+        private string CurrentDirectory
         {
             get;
             set;
@@ -27,14 +27,14 @@ using EasySaveAppV0.Search;
 
     //...
 
-    public String FileName
+    private String FileName
     {
             //File Name
             get;
             set;
     }
     
-    public string FilePath
+    private string FilePath
         {
             get;
             set;
